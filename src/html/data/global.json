@@ -76,6 +76,7 @@
     },
     "coupon": {
       "hero": {
+        "title": "Coupon & Offers",
         "backgroundImage": {
           "src": "//placehold.it/1200x800"
         }
