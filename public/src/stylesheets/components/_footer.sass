@@ -1,0 +1,61 @@
+.footer
+  background: $footer-bg
+  padding: 1rem
+
+  > .container
+    +media(min-width $screen-medium)
+      +display(flex)
+      +flex-direction(row)
+      +align-items(center)
+      +align-content(center)
+
+
+  .social-media
+    text-transform: uppercase
+
+    +media(max-width $screen-medium)
+      border-bottom: 2px solid $color-primary-light
+      padding: 1rem 2rem
+      margin-bottom: 2rem
+      &__link
+        text-align: center
+
+    +media(min-width $screen-medium)
+      padding: 2rem
+      border-right: 2px solid $color-primary-light
+      +span-columns(3)
+
+    &__link
+      text-decoration: none
+      +media(min-width $screen-medium)
+        +display(flex)
+        +align-items(center)
+
+      &-icon,
+      &-text
+        +media(max-width $screen-medium)
+          display: inline-block
+          vertical-align: middle
+          
+
+    svg
+      min-width: 36px
+
+  &__navigation
+    +media(min-width $screen-medium)
+      +span-columns(6)
+
+    +media(min-width $screen-small)
+      +display(flex)
+      +align-items(center)
+      +justify-content(center)
+
+    ul
+      list-style: none
+      font-size: 80%
+
+  .brand
+    font-size: 80%
+    +media(min-width $screen-medium)
+      +span-columns(3)
+

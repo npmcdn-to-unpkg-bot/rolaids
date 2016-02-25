@@ -1,0 +1,98 @@
+{
+  "brand": {
+    "logo": "http://placehold.it/300x80&text=Rolaids"  
+  },
+  "nav": {
+    "primary": [
+      {
+        "label": "Products",
+        "url": "products.html"
+      },
+      {
+        "label": "The Rolaids Advantage",
+        "url": "rolaids-advantage.html"
+      },
+      {
+        "label": "Symptoms",
+        "url": "symptoms.html"
+      },
+      {
+        "label": "Coupons & Offers",
+        "url": "coupon.html"
+      }
+    ],
+    "secondary": [
+      {
+        "label": "contact us",
+        "url": "contact.html"
+      },
+      {
+        "label": "where to buy",
+        "url": "where-to-buy.html"
+      }
+    ]
+  },
+  "socialLinks": [
+    {
+      "id": "twitter",
+      "title": "Twitter",
+      "url": "https://twitter.com/rolaids"
+    },
+    {
+      "id": "facebook",
+      "title": "Facebook",
+      "url": "https://www.facebook.com/rolaids"
+    },
+    {
+      "id": "instagram",
+      "title": "Instagram",
+      "url": "https://instagram.com/rolaids"
+    }
+  ],
+  "page": { 
+    "contact": {
+      "featuredImage": {
+        "src": "http://placehold.it/1200x800"
+      },
+      "productImage": {
+        "src": "http://placehold.it/500/ffffff"
+      }
+    },
+    "home": {
+      "carousel": [
+        {
+          "src": "http://placehold.it/1200x800",
+          "caption": {
+            "title": "Headline 1 Goes Here",
+            "text": "Consectetur eaque magni fuga modi harum quam sequi officiis explicabo asperiores libero. Ratione eligendi placeat.",
+            "buttonLink": "#",
+            "buttonText": "Learn More"
+          }
+        }
+      ],
+      "coupon": {
+        "text": "Save $1.00 on any Rolaids product"
+      }
+    },
+    "coupon": {
+      "hero": {
+        "title": "Coupon & Offers",
+        "backgroundImage": {
+          "src": "//placehold.it/1200x800"
+        }
+      },
+      "content": {
+        "title": "Save $1.00 on Rolaids&reg;",
+        "text": "",
+        "button": {
+          "text": "Download Coupon",
+          "buttonLink": "#"
+        },                
+        "image": {
+          "src": "//placehold.it/500x500/ffffff",
+          "alt": "Image Alt"
+        }
+      }
+    }
+  }
+}

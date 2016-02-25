@@ -1,0 +1,13 @@
+body.contact
+  .hero
+    background-position: center
+    background-size: cover
+
+  .content
+    background: $content-bg
+
+    > .container
+      +display(flex)
+      +flex-direction(column-reverse)
+      +media(min-width $screen-medium)
+        +flex-direction(row-reverse)

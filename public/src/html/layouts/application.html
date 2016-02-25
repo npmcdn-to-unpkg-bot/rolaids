@@ -1,0 +1,34 @@
+{% from 'macros/helpers.html' import sprite %}
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{% block meta %} Rolaids Meta Description {%endblock %} ">
+
+  <title>{% block title %}Rolaids&reg;{% endblock %}</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="stylesheets/global.css">
+
+  <!-- Application Icons -->
+  {% include "shared/app-icons.html" %}
+
+  {% block head %}{% endblock %}
+</head>
+<body class="{{ pageClass }}">
+
+  {% include "shared/app-header.html" %}
+
+  {% block hero %}<!-- Hero Unit -->{% endblock %}
+
+  {% block content %}<!-- Content-->{% endblock %}
+  
+  {% include "shared/app-footer.html" %}
+
+  <script src="javascripts/shared.js"></script>
+  {% block javascript %}{% endblock %}
+</body>
+</html>

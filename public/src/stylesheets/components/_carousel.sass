@@ -1,0 +1,25 @@
+.carousel
+  position: relative
+
+  &-inner
+    overflow: hidden
+
+  &-item
+    position: relative
+
+    &__image
+      +size(100%)
+      object-fit: cover
+      object-position: center
+
+      +media(max-width $screen-small)
+        height: 100vh
+      +media(min-width $screen-large)
+        height: 50vmax
+
+    &__caption
+      display: table
+      margin: auto
+      max-width: 50%
+      
+      +position(absolute, 0 0 0 0)
