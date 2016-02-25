@@ -6,29 +6,29 @@
     "primary": [
       {
         "label": "Products",
-        "url": "/products.html"
+        "url": "products.html"
       },
       {
         "label": "The Rolaids Advantage",
-        "url": "/rolaids-advantage.html"
+        "url": "rolaids-advantage.html"
       },
       {
         "label": "Symptoms",
-        "url": "/symptoms.html"
+        "url": "symptoms.html"
       },
       {
         "label": "Coupons & Offers",
-        "url": "/coupon.html"
+        "url": "coupon.html"
       }
     ],
     "secondary": [
       {
         "label": "contact us",
-        "url": "/contact.html"
+        "url": "contact.html"
       },
       {
         "label": "where to buy",
-        "url": "/where-to-buy.html"
+        "url": "where-to-buy.html"
       }
     ]
   },
