@@ -1,0 +1,42 @@
+{% extends 'layouts/application.html' %}
+
+{% set pageClass = "where-to-buy" %}
+
+{% block hero %}
+<section class="hero" style="background-image: url({{ page.contact.featuredImage.src }})">
+    <div class="container">
+      <div class="hero-caption">
+        <h1 class="hero-caption__title">Where To Buy</h1>
+      </div>
+    </div>
+  </section>
+{% endblock %}
+
+{% block content %}
+  <main class="content">
+    <div class="container">
+      <div class="filter-retailers">
+        <label for="retailers">More Retailers<label>
+        <select id="retailers" name="retailers">
+          <option>Albertsons</option>
+          <option>Amazon</option>
+          <option>CVS</option>
+          <option>Dollar General</option>
+        </select>
+      </div>
+
+      <div class="retailers">
+        <div class="retailers-block"><span class="sr-only">Amazon</span></div>
+        <div class="retailers-block"><span class="sr-only">CVS</span></div>
+        <div class="retailers-block"><span class="sr-only">Dollar General</span></div>
+        <div class="retailers-block"><span class="sr-only">Family Dollar</span></div>
+        <div class="retailers-block"><span class="sr-only">Rite Aid</span></div>
+        <div class="retailers-block"><span class="sr-only">Safeway</span></div>
+        <div class="retailers-block"><span class="sr-only">Super Valu</span></div>
+        <div class="retailers-block"><span class="sr-only">Target</span></div>
+        <div class="retailers-block"><span class="sr-only">Walgreens</span></div>
+        <div class="retailers-block"><span class="sr-only">Walmart</span></div>
+      </div>
+    </div>
+  </main>
+{% endblock %}

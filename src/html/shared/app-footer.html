@@ -1,0 +1,39 @@
+{% block footer %}
+<footer class="footer">
+  <div class="container">
+    <div class="social-media">
+      <a class="social-media__link" href="#">
+        <span class="social-media__link-text">Check us out on facebook</span>
+        <span class="social-media__link-icon">{{ sprite('facebook') }}</span>
+      </a>
+    </div>
+    <nav class="footer__navigation">
+      <ul>
+        <li><a class="footer__navigation-link" href="#">The Rolaids Advantage</a></li> 
+        <li><a class="footer__navigation-link" href="">Coupons & Offers</a></li> 
+      </ul>
+      <ul>
+        <li><a class="footer__navigation-link" href="">Heartburn & Indigestion</a></li> 
+        <li><a class="footer__navigation-link" href="">Heartburn</a></li> 
+        <li><a class="footer__navigation-link" href="">Acid Indigestion</a></li> 
+      </ul>
+      <ul>
+        <li><a class="footer__navigation-link" href="">More</a></li> 
+        <li><a class="footer__navigation-link" href="">FAQ</a></li> 
+        <li><a class="footer__navigation-link" href="">Contact Us</a></li> 
+        <li><a class="footer__navigation-link" href="">Privacy Policy</a></li> 
+        <li><a class="footer__navigation-link" href="">Terms Of Use</a></li> 
+      </ul>
+    </nav>
+    <div class="brand">
+      <img class="brand-image" src="/images/logo_chattem.png" alt="">
+      <span class="brand-title">A Sanofi Company</span>
+      <p class="brand-text">
+        &copy;<script>document.write(new Date().getFullYear());</script>
+        Chattem, Inc. All Rights Reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+{% endblock %}
+
