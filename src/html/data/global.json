@@ -42,7 +42,7 @@
       },
       {
         "label": "The Rolaids Advantage",
-        "url": "rolaids-advantage.html"
+        "url": "/rolaids-advantage.html"
       },
       {
         "label": "Symptoms",
@@ -80,17 +80,17 @@
       },
       {
         "label": "Coupons & Offers",
-        "url": "coupon.html"
+        "url": "/coupon.html"
       }
     ],
     "secondary": [
       {
         "label": "contact us",
-        "url": "contact.html"
+        "url": "/contact.html"
       },
       {
         "label": "where to buy",
-        "url": "where-to-buy.html"
+        "url": "/where-to-buy.html"
       }
     ]
   },
@@ -222,7 +222,6 @@
     },
     "coupon": {
       "hero": {
-        "title": "Coupon & Offers",
         "backgroundImage": {
           "src": "//placehold.it/1200x800"
         }
