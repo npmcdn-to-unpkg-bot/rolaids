@@ -1,8 +1,29 @@
-<nav id="app_nav" class="app-nav">
-    <ul class="app-nav__list">
+<nav id="app_nav" class="nav--primary">
+    <ul class="nav__list">
         {% for item in nav.primary %}
-        <li class="app-nav__list-item">
-            <a href="{{ item.url }}">
+        <li class="nav__list-item">
+          <a class="nav__list-link {% if item.dropdownMenu %} has-dropdown {% endif %}" href="{{ item.url }}">
+                {{ item.label }}
+            </a>
+            {% if item.dropdownMenu %}
+              <div class="nav-dropdown">
+                <ul class="nav-dropdown__list">
+                {% for item in item.dropdownMenu %}
+                  <li class="nav-dropdown__list-item">
+                    <a class="nav-dropdown__list-link" href="{{ item.url }}">
+                      <img class="nav-dropdown__list-image" src="{{ item.image.src }}" alt="">
+                    </a>
+                    <a class="nav-dropdown__list-link" href="{{ item.url }}">{{ item.label }}</a>
+                  </li>
+                {% endfor %}
+                </ul>
+              </div>
+            {% endif %}
+        </li>
+        {% endfor %}
+        {% for item in nav.secondary %}
+        <li class="nav__list-item" aria-hidden="true">
+            <a class="nav__list-link" href="{{ item.url }}">
                 {{ item.label }}
             </a>
         </li>

@@ -17,17 +17,34 @@
       > .row 
         display: flex
         align-items: center
-        justify-content: space-between
+
+        &:first-child
+          justify-content: flex-end
+          padding: 0 1rem
 
     &--top
       order: 0
   
-
   .block--right
-    +media(min-width $screen-medium)
-      display: flex
-      align-items: center
+    +display(flex)
+    +flex-direction(row)
+    +align-items(center)
+    +justify-content(flex-end)
+    +size(100% auto)
+
+  .nav-toggle
+    order: 1
+    display: none
+    +media(max-width $screen-small)
+      display: block
 
   .social-media
+    order: 0
     svg
       width: 16px
+
+  .social-media, .app-nav--secondary
+    +media(min-width $screen-medium)
+      display: inline-block
+      vertical-align: middle
+

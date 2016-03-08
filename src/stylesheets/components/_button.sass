@@ -1,0 +1,31 @@
+.button
+  background: $btn-default-bg
+  color: $btn-default-color
+  letter-spacing: $btn-default-kern
+  text-decoration: none
+  text-transform: uppercase
+  padding: $btn-base-pad
+
+  &:hover
+    background: darken($btn-default-bg, 3%)
+  &:active
+    background: darken($btn-default-bg, 10%)
+
+  &--large
+    font-size: $btn-large-text
+    padding: $btn-large-pad 
+
+  &--primary
+    background: $btn-primary-bg
+    color: $btn-primary-color
+
+    &:hover
+      background: lighten($btn-primary-bg, 5%)
+
+    &:active
+      background: darken($btn-primary-bg, 10%)
+
+  &--secondary
+    &:hover
+      background: $btn-secondary-bg
+      color: $btn-secondary-color

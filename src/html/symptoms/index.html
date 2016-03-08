@@ -1,0 +1,68 @@
+{% extends 'layouts/application.html' %}
+
+{% set pageClass = "symptom" %}
+{% set pageController = "symptom" %}
+{% set pageAction = "show" %}
+
+{% block hero %}
+<section class="hero" style="background-image: url({{ page.symptom.hero.backgroundImage.src }})">
+  <div class="container">
+    <div class="hero-caption">
+      <h1 class="hero-caption__title">
+        {{ page.symptom.hero.caption.title }}
+      </h1>
+      <p class="hero-caption__text">
+        {{ page.symptom.hero.caption.text }}
+      </p>
+      <a class="hero-caption__button button button--large" href="#">Buy Now</a>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block content %}
+  <dl class="page-nav">
+    {% for item in page.symptom.section %}
+    <dt><a class="page-nav__link" href="{{ item.nav.link }}">{{ item.nav.label }}</a></dt>
+    {% endfor %}
+  </dl>
+
+  <main class="content">
+  {% set count = 0 %}
+  {% for section in page.symptom.section %}
+    {% set count = count + 1 %}
+    <section id="{{ section.id }}"class="section {{ section.class }}">
+      <div class="section-content">
+        {% if (count % 2) %}
+        <div class="section-content__column">
+          <header class="section-header">
+            <h4 class="section-header__subtitle">{{ section.content.subtitle }}</h4>
+            <h2 class="section-header__title">{{ section.content.title }}</h2>
+          </header>
+          <div class="section-content__text">
+            {{ section.content.text }}
+          </div>
+        </div>
+        <div class="section-content__column">
+          <img class="section-image" src="{{ section.content.image.src }}" alt="{{ section.content.image.alt }}">
+        </div>
+        {% else %}
+        <div class="section-content__column">
+          <img class="section-image" src="{{ section.content.image.src }}" alt="{{ section.content.image.alt }}">
+        </div>
+        <div class="section-content__column">
+          <header class="section-header">
+            <h4 class="section-header__subtitle">{{ section.content.subtitle }}</h4>
+            <h2 class="section-header__title">{{ section.content.title }}</h2>
+          </header>
+          <div class="section-content__text">
+            {{ section.content.text }}
+          </div>
+        </div>
+        {% endif %}
+      </div>
+    </section>
+  {% endfor %}
+  </main>
+
+{% endblock %}

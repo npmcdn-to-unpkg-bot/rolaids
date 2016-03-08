@@ -1,12 +1,44 @@
 {
   "brand": {
-    "logo": "http://placehold.it/300x80&text=Rolaids"  
+    "logo": {
+      "src": "/images/Rolaids-logo-200x50.png"
+    }
   },
   "nav": {
     "primary": [
       {
         "label": "Products",
-        "url": "products.html"
+        "url": "products.html",
+        "dropdownMenu": [
+          {
+            "label": "Dropdown 1",
+            "url": "#dropdown1",
+            "image": {
+              "src": "http://placehold.it/200"
+            }
+          },
+          {
+            "label": "Dropdown 2",
+            "url": "#dropdown2",
+            "image": {
+              "src": "http://placehold.it/200"
+            }
+          },
+          {
+            "label": "Dropdown 3",
+            "url": "#dropdown3",
+            "image": {
+              "src": "http://placehold.it/200"
+            }
+          },
+          {
+            "label": "Dropdown 4",
+            "url": "#dropdown4",
+            "image": {
+              "src": "http://placehold.it/200"
+            }
+          }
+        ]
       },
       {
         "label": "The Rolaids Advantage",
@@ -14,7 +46,37 @@
       },
       {
         "label": "Symptoms",
-        "url": "symptoms.html"
+        "url": "symptoms/index.html",
+        "dropdownMenu": [
+          {
+            "label": "Dropdown 1",
+            "url": "#dropdown1",
+            "image": {
+              "src": "http://placehold.it/200"
+            }
+          },
+          {
+            "label": "Dropdown 2",
+            "url": "#dropdown2",
+            "image": {
+              "src": "http://placehold.it/200"
+            }
+          },
+          {
+            "label": "Dropdown 3",
+            "url": "#dropdown3",
+            "image": {
+              "src": "http://placehold.it/200"
+            }
+          },
+          {
+            "label": "Dropdown 4",
+            "url": "#dropdown4",
+            "image": {
+              "src": "http://placehold.it/200"
+            }
+          }
+        ]
       },
       {
         "label": "Coupons & Offers",
@@ -49,19 +111,11 @@
       "url": "https://instagram.com/rolaids"
     }
   ],
-  "page": { 
-    "contact": {
-      "featuredImage": {
-        "src": "http://placehold.it/1200x800"
-      },
-      "productImage": {
-        "src": "http://placehold.it/500/ffffff"
-      }
-    },
+  "page": {
     "home": {
       "carousel": [
         {
-          "src": "http://placehold.it/1200x800",
+          "src": "http://lorempixel.com/1200/800/cats",
           "caption": {
             "title": "Headline 1 Goes Here",
             "text": "Consectetur eaque magni fuga modi harum quam sequi officiis explicabo asperiores libero. Ratione eligendi placeat.",
@@ -72,7 +126,99 @@
       ],
       "coupon": {
         "text": "Save $1.00 on any Rolaids product"
+      },
+      "callout": {
+        "first": {
+          "backgroundImage": "http://lorempixel.com/800/800/cats",
+          "title": "Kick Acid And Gas",
+          "button1": {
+            "text": "Learn More",
+            "link": "#"
+          },
+          "button2": {
+            "text": "Watch The Video",
+            "link": "#"
+          }
+        },
+        "last": {
+          "backgroundImage": "http://lorempixel.com/800/800/cats",
+          "text": "Rolaids Regular Strength Tablets <span class=\"text-emphasis--secondary\">Neutralize 44% More Acid</span> Than Tums Regular"
+        }
       }
+    },
+    "product": {
+      "hero": {
+        "backgroundImage": {
+          "src": "//placehold.it/1200x800"
+        },
+        "caption": {
+          "title": "Rolaids<br>Advanced&reg; Tablets",
+          "text": "It kicks acid and a whole lot more"
+        },
+        "product": {
+          "large": {
+            "src": "//placehold.it/350/f0f0f0"
+          },
+          "small": {
+            "src": "//placehold.it/300x100/cfcfcf"
+          }
+        }
+      }
+    },
+    "symptom": {
+      "hero": {
+        "backgroundImage": {
+          "src": "//placehold.it/1200x800"
+        },
+        "caption": {
+          "title": "Heartburn",
+          "text": "That burning sensation in your throat caused by stomach acid backing up into your esophagus. Ouch."
+        }
+      },
+      "section": [
+        {
+          "class": "section-triangle",
+          "nav": {
+            "link": "#what-is-heartburn",
+            "label": "What is Heartburn?"
+          },
+          "content": {
+            "title": "What is Heartburn?",
+            "subtitle": "Overview",
+            "text": "Nothing can ruin a good time faster than heartburn.",
+            "image": {
+              "src": "//lorempixel.com/800/600/sports"
+            }
+          }
+        },
+        {
+          "class": "section-display",
+          "nav": {
+            "link": "#what-are-the-symptoms",
+            "label": "What are the symptoms of Heartburn?"
+          },
+          "content": {
+            "title": "Heartburn Symptoms",
+            "subtitle": "Symptoms",
+            "text": "The primary symptom of heartburn is a painful, burning sensaiton in the chest",
+            "image": {
+              "src": "//lorempixel.com/800/600"
+            }
+          }
+        },
+        {
+          "nav": {
+            "link": "#what-triggers-heartburn",
+            "label": "What triggers Heartburn?"
+          }
+        },
+        {
+          "nav": {
+            "link": "#what-prevents-heartburn",
+            "label": "What can I do to help prevent Heartburn?"
+          }
+        }
+      ]
     },
     "coupon": {
       "hero": {
@@ -87,11 +233,24 @@
         "button": {
           "text": "Download Coupon",
           "buttonLink": "#"
-        },                
+        },
         "image": {
           "src": "//placehold.it/500x500/ffffff",
           "alt": "Image Alt"
         }
+      }
+    },
+    "contact": {
+      "hero": {
+        "backgroundImage": {
+          "src": "http://placehold.it/1200x800"
+        },
+        "caption": {
+          "title": "Contact Us"
+        }
+      },
+      "productImage": {
+        "src": "http://placehold.it/500/ffffff"
       }
     }
   }

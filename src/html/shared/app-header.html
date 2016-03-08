@@ -6,11 +6,13 @@
         <!-- Brand -->
         <div class="brand">
           <a href="/" class="brand__link">
-            <img src="{{ brand.logo }}" alt="Rolaids&reg;" class="brand__image">
+            <img src="{{ brand.logo.src }}" alt="Rolaids&reg;" class="brand__image img-responsive">
           </a>
         </div>
 
         <div class="block--right">
+          <button id="nav_toggle" class="nav-toggle" type="button">Menu</button>
+
           <!-- Social Media -->
           <div class="social-media">
             {% include "shared/social-icons-svg.html" %}
@@ -18,6 +20,7 @@
 
           <!-- Secondary Navigation -->
           {% include "shared/nav-secondary.html" %}
+
         </div>
       </div>
 
@@ -29,7 +32,7 @@
     <div class="header__bar--top">
       <div class="sanofi-logo">
         <a href="#sanofi" class="sanofi-logo__link" title="Sanofi">
-          <img src="images/sanofi-logo.png" alt="" class="sanofi-logo__image">
+          <img src="/images/Sanofi-logo-135x30.png" alt="" class="sanofi-logo__image">
           <small class="sanofi-logo__text">for US residents only</small>
         </a>
       </div>

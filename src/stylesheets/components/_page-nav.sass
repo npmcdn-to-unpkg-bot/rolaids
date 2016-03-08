@@ -1,0 +1,27 @@
+.page-nav
+  background: $white
+  margin: 0
+  counter-reset: nav-counter
+  display: flex
+  justify-content: center
+  width: 100%
+  text-transform: uppercase
+
+  dt
+    display: flex
+    align-items: center
+    max-width: 250px
+    padding: 1em
+
+    &:before
+      content: counter(nav-counter)
+      counter-increment: nav-counter
+
+      font-size: 22px
+      padding: 1em
+
+    &:hover
+      background: $light-grey
+
+  a
+    text-decoration: none

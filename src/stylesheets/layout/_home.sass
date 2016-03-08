@@ -16,11 +16,15 @@ body.home
       padding: 1rem
       min-height: 360px
       height: 35vmax
-      // +media(min-width $screen-medium)
-      //   height: auto
 
-      &:first-child
-        +media(max-width $screen-medium)
-          border-bottom: 6px solid #fff
-        +media(min-width $screen-medium)
-          border-right: 6px solid #fff
+  .callout-block--first
+    text-align: center
+    +media(max-width $screen-medium)
+      border-bottom: 6px solid #fff
+    +media(min-width $screen-medium)
+      border-right: 6px solid #fff
+
+    .callout-block__title
+      color: $red
+      font-size: modular-scale(6)
+      text-shadow: 0 1px 5px rgba($dark-grey, 0.6)

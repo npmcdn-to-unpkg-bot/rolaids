@@ -11,14 +11,14 @@
   <title>{% block title %}Rolaids&reg;{% endblock %}</title>
 
   <!-- Styles -->
-  <link rel="stylesheet" href="stylesheets/global.css">
+  <link rel="stylesheet" href="/stylesheets/global.css">
 
   <!-- Application Icons -->
   {% include "shared/app-icons.html" %}
 
   {% block head %}{% endblock %}
 </head>
-<body class="{{ pageClass }}">
+<body class="{{ pageClass }}" data-controller="{{ pageController }}" data-action="{{ pageAction }}">
 
   {% include "shared/app-header.html" %}
 
@@ -28,7 +28,9 @@
   
   {% include "shared/app-footer.html" %}
 
-  <script src="javascripts/shared.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="/javascripts/shared.js"></script>
+  <script src="/javascripts/app.js"></script>
   {% block javascript %}{% endblock %}
 </body>
 </html>

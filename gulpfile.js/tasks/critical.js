@@ -2,7 +2,7 @@ var gulp        = require('gulp')
 var critical    = require('critical').stream
 var path        = require('path')
 var config      = require('../config')
-var manifest    = require('../../public/rev-manifest.json')
+// var manifest    = require('../../public/rev-manifest.json')
 
 var criticalTask = function (cb) {
   return gulp.src(path.join(config.root.dest, '*.html'))

@@ -1,4 +1,5 @@
 .carousel
+  color: $carousel-default-color
   position: relative
 
   &-inner
@@ -20,6 +21,22 @@
     &__caption
       display: table
       margin: auto
-      max-width: 50%
+      padding: 1rem
       
-      +position(absolute, 0 0 0 0)
+      +position(absolute, null null 10% null)
+      +media(min-width $screen-medium)
+        width: 50%
+        max-width: 600px
+        left: 10%
+
+.carousel-item__caption
+  &-title,
+  &-text 
+    font-size: modular-scale(1)
+
+  &-title
+    font-size: modular-scale(3)
+    text-transform: uppercase
+  &-text
+    margin-bottom: 2em
+

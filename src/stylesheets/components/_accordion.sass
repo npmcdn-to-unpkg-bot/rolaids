@@ -1,0 +1,36 @@
+.accordion
+  
+  &__submenu
+    display: none
+
+  &.is-expanded
+    display: block
+
+
+.accordion-tabs
+  +clearfix
+  padding: 0
+
+  .tab
+    list-style: none
+    
+    +media ($screen-large)
+      display: inline
+
+
+  .tab-link
+    display: block
+    padding-right: 1em
+
+    +media($screen-large)
+      display: inline-block
+
+    &.is-active
+      @extend .button--secondary:hover
+
+  .tab-content
+    display: none
+    width: 100%
+
+    +media($screen-large)
+      float: left

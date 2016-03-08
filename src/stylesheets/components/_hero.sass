@@ -1,8 +1,23 @@
 .hero
   background-size: cover
   background-position: center
-  min-height: 500px
-  +position(relative)
+  height: 500px
+
+  > .container
+    height: 100%
+    +position(relative)
   
   &-caption
-    +position(absolute, null null 10% 10%) 
+    color: $hero-default-color 
+    +position(absolute, null null 10% 0) 
+    padding: 1em
+
+    +media($screen-medium)
+      max-width: 50%
+
+    &__title
+      font-size: modular-scale(3)
+      text-transform: uppercase
+
+    &__text
+      margin-bottom: 3rem

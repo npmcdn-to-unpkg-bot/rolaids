@@ -9,7 +9,6 @@
       +align-items(center)
       +align-content(center)
 
-
   .social-media
     text-transform: uppercase
 
@@ -53,6 +52,15 @@
     ul
       list-style: none
       font-size: 80%
+
+      +media(min-width $screen-medium)
+        font-size: 90%
+      
+      li
+        padding: 0.3em 0.1em
+
+    a
+      text-decoration: none
 
   .brand
     font-size: 80%

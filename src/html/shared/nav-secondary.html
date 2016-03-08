@@ -1,9 +1,11 @@
-<nav id="app_nav_secondary" class="app-nav__secondary">
-    <ul class="app-nav__list">
+<nav id="app_nav_secondary" class="nav--secondary">
+    <ul class="nav__list">
         {% for item in nav.secondary %}
-        <a href="{{ item.url }}">
+        <li class="nav__list-item">
+          <a class="nav__list-link" href="{{ item.url }}">
             {{ item.label }}
-        </a>
+          </a>
+        </li>
         {% endfor %}
     </ul>
 </nav>

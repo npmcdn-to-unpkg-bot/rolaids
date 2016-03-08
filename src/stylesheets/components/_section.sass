@@ -1,0 +1,50 @@
+.section
+  +outer-container(1440px)
+
+  &-content
+    +row
+
+    &__column
+      +media($screen-medium)
+        +span-columns(6)
+
+
+.section-triangle
+
+  .section-content__column:last-child
+    +position(relative)
+
+    &:after
+      content: ''
+
+      border-right: 400px solid rgba($color-primary, 0.6)
+      border-left: 400px solid transparent
+      border-top: 400px solid transparent
+      +position(absolute, null 0 0 null)
+
+
+.section-display
+
+  .section-content
+    background-color: $color-secondary-light
+
+  .section-image
+    +position(relative)
+    z-index: 1
+  .section-header
+    background-color: purple
+    color: $white
+
+    padding: 1em 0
+    margin-bottom: 2em
+    width: 100%
+    +position(relative)
+    z-index: 0
+
+    &:before
+      content: ''
+      background: purple
+      width: 105%
+      height: 100%
+      +position(absolute, 0 null null -105%)
+      z-index: -1

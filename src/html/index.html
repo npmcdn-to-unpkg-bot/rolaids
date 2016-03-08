@@ -1,6 +1,8 @@
 {% extends 'layouts/application.html' %}
 
 {% set pageClass = "home" %}
+{% set pageController = "home" %}
+{% set pageAction = "show" %}
 
 {% block hero %}
 <section class="section carousel">
@@ -11,7 +13,7 @@
       <div class="carousel-item__caption">
         <h2 class="carousel-item__caption-title">{{ item.caption.title }}</h2>
         <p class="carousel-item__caption-text">{{ item.caption.text }}</p>
-        <a class="carousel-item__caption-button" href="{{ item.caption.buttonLink }}">{{ item.caption.buttonText }}</a>
+        <a class="carousel-item__caption-button button button--large" href="{{ item.caption.buttonLink }}">{{ item.caption.buttonText }}</a>
       </div>
     </div>
     {% endfor %}
@@ -22,28 +24,24 @@
 {% block content %}
 <main class="content">
   <div class="coupon-bar">
-    {{ page.home.coupon.text }}
-    {# Save <span class="text-emphasis--primary">$1.00</span> on any Rolaids Product #}
+    <a href="{{ page.home.coupon.link }}" class="coupon-bar__link">{{ page.home.coupon.text }}</a>
   </div>
 
   <section class="callout">
-    <div class="callout-block" style="background-image: url(http://placehold.it/800x800)">
-      <h3 class="callout-block__title">Kick Acid And Gas</h3>
-      <a class="callout-block__button--primary" href="#">Learn More</a>
-      <a class="callout-block__button" href="#">Watch The Video</a>
+    <div class="callout-block callout-block--first" style="background-image: url({{ page.home.callout.first.backgroundImage }})">
+      <h3 class="callout-block__title">{{ page.home.callout.first.title }}</h3>
+      <a class="callout-block__button button button--primary" href="{{ page.home.callout.first.button1.link }}">{{ page.home.callout.first.button1.text }}</a>
+      <a class="callout-block__button button" href="{{ page.home.callout.first.button2.link }}">{{ page.home.callout.first.button2.text }}</a>
     </div>
-    <div class="callout-block" style="background-image: url(http://placehold.it/800x800)">
+    <div class="callout-block callout-block--last" style="background-image: url({{ page.home.callout.last.backgroundImage }})">
       <p class="callout-block__text">
-        Rolaids Regular Strength Tablets
-        <span class="text-emphasis--secondary">Neutralize 44% More Acid</span>
-        Than Tums Regular
+        {{ page.home.callout.last.text }}
       </p>
-      <a class="callout-block__button--secondary" href="#">Find Out How</a>
+      <a class="callout-block__button button button--secondary" href="#">Find Out How</a>
     </div>
   </section>
 </main>
 {% endblock %}
 
 {% block javascript %}
-  <script src="javascripts/app.js"></script>
 {% endblock %}
