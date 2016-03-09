@@ -1,7 +1,7 @@
 {
   "brand": {
     "logo": {
-      "src": "/images/Rolaids-logo-200x50.png"
+      "src": "/images/Rolaids-logo-415x114.png"
     }
   },
   "nav": {
@@ -11,31 +11,31 @@
         "url": "products.html",
         "dropdownMenu": [
           {
-            "label": "Dropdown 1",
-            "url": "#dropdown1",
+            "label": "Advanced Tablets",
+            "url": "#advanced-tablet",
             "image": {
-              "src": "http://placehold.it/200"
+              "src": "/images/Rolaids-products-drop-adv.png"
             }
           },
           {
-            "label": "Dropdown 2",
-            "url": "#dropdown2",
+            "label": "Regular Tablets",
+            "url": "#regular-tablet",
             "image": {
-              "src": "http://placehold.it/200"
+              "src": "/images/Rolaids-products-drop-reg.png"
             }
           },
           {
-            "label": "Dropdown 3",
-            "url": "#dropdown3",
+            "label": "Ultimate Tablets",
+            "url": "#ultimate-tablet",
             "image": {
-              "src": "http://placehold.it/200"
+              "src": "/images/Rolaids-products-drop-ult.png"
             }
           },
           {
-            "label": "Dropdown 4",
-            "url": "#dropdown4",
+            "label": "Extra Strength Tablets",
+            "url": "#extra-strength-tablet",
             "image": {
-              "src": "http://placehold.it/200"
+              "src": "/images/Rolaids-products-drop-xtra.png"
             }
           }
         ]
@@ -49,24 +49,24 @@
         "url": "symptoms/index.html",
         "dropdownMenu": [
           {
-            "label": "Dropdown 1",
-            "url": "#dropdown1",
+            "label": "Heartburn",
+            "url": "#heartburn",
             "image": {
-              "src": "http://placehold.it/200"
+              "src": "/images/Rolaids-symptoms-heartburn.png"
             }
           },
           {
-            "label": "Dropdown 2",
-            "url": "#dropdown2",
+            "label": "Gas",
+            "url": "#gas",
             "image": {
-              "src": "http://placehold.it/200"
+              "src": "/images/Rolaids-symptoms-gas.png"
             }
           },
           {
-            "label": "Dropdown 3",
-            "url": "#dropdown3",
+            "label": "Indigestion",
+            "url": "#indigestion",
             "image": {
-              "src": "http://placehold.it/200"
+              "src": "/images/Rolaids-"
             }
           },
           {
@@ -115,7 +115,7 @@
     "home": {
       "carousel": [
         {
-          "src": "http://lorempixel.com/1200/800/cats",
+          "src": "https://skyfiregcs-a.akamaihd.net/exp=1457561872~acl=%2A%2F494631530.mp4%2A~hmac=6f34d833a18d116ef000f514e581c0dbb0782d588fec1293b37556446ea0974a/2tierchgci/vimeo-prod-skyfire-std-us/01/1673/6/158368523/494631530.mp4",
           "caption": {
             "title": "Headline 1 Goes Here",
             "text": "Consectetur eaque magni fuga modi harum quam sequi officiis explicabo asperiores libero. Ratione eligendi placeat.",

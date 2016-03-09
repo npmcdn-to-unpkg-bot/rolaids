@@ -6,7 +6,7 @@
   &--primary
     .nav__list-link
       text-transform: uppercase
-      
+
       &:hover, .active
         border-bottom: 1px solid $color-primary
 
@@ -20,12 +20,6 @@
     margin: 0
     padding: 0
 
-    &-link
-      border-bottom: 1px solid transparent
-      display: block
-      padding: 0.5rem
-      text-decoration: none
-
     +media(max-width $screen-medium)
       font-size: 75%
     +media(min-width $screen-small)
@@ -33,20 +27,26 @@
 
       &-link
         padding: 1rem
-        
-        &.has-dropdown:hover 
+
+        &.has-dropdown:hover
           background: #fff
           + .nav-dropdown
             display: block
-  
-  &-dropdown    
+
+    &-link
+      border-bottom: 1px solid transparent
+      display: block
+      padding: 0.5rem
+      text-decoration: none
+
+  &-dropdown
     background: #fff
     padding: 1rem
     display: none
     width: 100%
 
     position: absolute
-    left: 0 
+    left: 0
     right: 0
 
     &:hover
@@ -57,4 +57,8 @@
       display: table
       margin: auto
       padding: 0
+
+      &-item
+        display: table-cell
+        padding: 0 1rem
 
