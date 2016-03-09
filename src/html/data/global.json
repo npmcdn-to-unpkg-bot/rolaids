@@ -115,6 +115,15 @@
             "buttonLink": "#",
             "buttonText": "Learn More"
           }
+        },
+        {
+          "src": "https://player.vimeo.com/external/158388872.hd.mp4?s=4b0cb2dd121e0bb98f2bbe63ffb3ac95061a2eef&profile_id=119",
+          "caption": {
+            "title": "Headline 2 Goes Here",
+            "text": "Consectetur eaque magni fuga modi harum quam sequi officiis explicabo asperiores libero. Ratione eligendi placeat.",
+            "buttonLink": "#",
+            "buttonText": "Learn More"
+          }
         }
       ],
       "coupon": {

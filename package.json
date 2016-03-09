@@ -1,11 +1,11 @@
 {
   "name": "rolaids",
-  "description": "a brand website",
+  "description": "brand website",
   "engines": {
     "node": "0.12.2",
     "npm": "2.7.4"
   },
-  "homepage": "http://rolaids.com",
+  "homepage": "http://conrman.github.io/rolaids",
   "repository": {
     "type": "git",
     "url": "git://github.com/conrman/rolaids.git"
@@ -19,6 +19,7 @@
     "test": "gulp production && karma start --single-run"
   },
   "dependencies": {
+    "flickity": "^1.1.2",
     "normalize-sass": "^1.0.0"
   },
   "devDependencies": {

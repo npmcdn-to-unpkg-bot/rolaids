@@ -5,25 +5,11 @@
   +position(absolute, 0 null null 0)
   z-index: 1
 
+
   .container
     display: flex
     flex-direction: column
 
-  &__bar
-    padding: 0 1rem
-    &--bottom
-      order: 1
-
-      > .row
-        display: flex
-        align-items: center
-
-        &:first-child
-          justify-content: flex-end
-          padding: 0 1rem
-
-    &--top
-      order: 0
 
   .block--right
     +display(flex)
@@ -32,19 +18,45 @@
     +justify-content(flex-end)
     +size(100% auto)
 
+
   .nav-toggle
     order: 1
     display: none
     +media(max-width $screen-small)
       display: block
 
-  .social-media
-    order: 0
-    svg
-      width: 16px
 
-  .social-media, .app-nav--secondary
-    +media(min-width $screen-medium)
-      display: inline-block
-      vertical-align: middle
+
+.header__bar
+  padding: 0 1rem
+
+  &--bottom
+    // Bottom visually goes first
+    order: 1
+
+    > .row
+      display: flex
+      align-items: center
+
+      &:first-child
+        justify-content: flex-end
+        padding: 0 1rem
+
+  &--top
+    // Top goes first for readers
+    order: 0
+
+
+
+.social-media
+  order: 0
+  svg
+    width: 16px
+
+
+.social-media,
+.app-nav--secondary
+  +media(min-width $screen-medium)
+    display: inline-block
+    vertical-align: middle
 

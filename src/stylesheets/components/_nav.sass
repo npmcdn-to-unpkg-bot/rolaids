@@ -3,63 +3,77 @@
     &__list-item[aria-hidden="true"]
       display: none
 
-  &--primary
-    .nav__list-link
-      text-transform: uppercase
 
-      &:hover, .active
-        border-bottom: 1px solid $color-primary
 
-  &--secondary
-    +media(max-width $screen-small)
-      display: none
-      visibility: hidden
+.nav--primary
+  .nav__list-link
+    text-transform: uppercase
 
-  &__list
-    list-style: none
-    margin: 0
-    padding: 0
-    text-align: center
+    &:hover, .active
+      border-bottom: 1px solid $color-primary
 
-    +media(max-width $screen-medium)
-      font-size: 75%
-    +media(min-width $screen-small)
-      display: flex
 
-      &-link
-        padding: 1rem
 
-        &.has-dropdown:hover
-          background: #fff
-          + .nav-dropdown
-            display: block
-
-    &-link
-      border-bottom: 1px solid transparent
-      display: block
-      padding: 0.5rem
-      text-decoration: none
-
-  &-dropdown
-    background: #fff
-    padding: 1rem
+.nav--secondary
+  +media(max-width $screen-small)
     display: none
-    width: 100%
+    visibility: hidden
 
-    position: absolute
-    left: 0
-    right: 0
 
-    &:hover
+
+.nav__list
+  list-style: none
+  margin: 0
+  padding: 0
+
+  +media(max-width $screen-medium)
+    font-size: 75%
+  +media(min-width $screen-small)
+    display: flex
+
+
+
+.nav__list-link
+  border-bottom: 1px solid transparent
+  display: block
+  padding: 0.5rem
+  text-decoration: none
+
+  &.has-dropdown:hover
+    background: #fff
+    + .nav-dropdown
       display: block
 
-    &__list
-      list-style: none
-      display: table
-      margin: auto
-      padding: 0
+  +media(min-width $screen-small)
+    padding: 1rem
 
-      &-item
-        display: table-cell
-        padding: 0 1rem
+
+
+.nav-dropdown
+  background: #fff
+  padding: 1rem
+  display: none
+  width: 100%
+  text-align: center
+
+  position: absolute
+  left: 0
+  right: 0
+
+  &:hover
+    display: block
+
+
+
+.nav-dropdown__list
+  list-style: none
+  display: table
+  margin: auto
+  padding: 0
+
+
+
+.nav-dropdown__list-item
+  display: table-cell
+  padding: 0 1rem
 
