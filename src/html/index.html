@@ -9,11 +9,9 @@
   <div class="carousel-inner">
     {% for item in page.home.carousel %}
     <div class="carousel-item">
-      <div class="carousel-item__background">
-        <video class="carousel-item__background--video" src="{{ item.src }}" autoplay loop>
-          <source src="{{ item.src }}" />
-        </video>
-      </div>
+      <video class="carousel-item__background carousel-item__background--video" src="{{ item.src }}" autoplay loop>
+        <source src="{{ item.src }}" />
+      </video>
       <div class="carousel-item__caption">
         <h2 class="carousel-item__caption-title">{{ item.caption.title }}</h2>
         <p class="carousel-item__caption-text">{{ item.caption.text }}</p>

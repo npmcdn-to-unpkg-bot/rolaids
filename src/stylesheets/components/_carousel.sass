@@ -8,7 +8,7 @@
   &-item
     position: relative
 
-    &__image
+    &__background
       +size(100%)
       object-fit: cover
       object-position: center
@@ -22,7 +22,7 @@
       display: table
       margin: auto
       padding: 1rem
-      
+
       +position(absolute, null null 10% null)
       +media(min-width $screen-medium)
         width: 50%
@@ -31,7 +31,7 @@
 
 .carousel-item__caption
   &-title,
-  &-text 
+  &-text
     font-size: modular-scale(1)
 
   &-title

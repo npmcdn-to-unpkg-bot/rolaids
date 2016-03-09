@@ -1,10 +1,10 @@
-.header   
+.header
   background: $header-bg
 
   width: 100%
   +position(absolute, 0 null null 0)
   z-index: 1
-  
+
   .container
     display: flex
     flex-direction: column
@@ -14,7 +14,7 @@
     &--bottom
       order: 1
 
-      > .row 
+      > .row
         display: flex
         align-items: center
 
@@ -24,7 +24,7 @@
 
     &--top
       order: 0
-  
+
   .block--right
     +display(flex)
     +flex-direction(row)

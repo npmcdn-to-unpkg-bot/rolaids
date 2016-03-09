@@ -46,11 +46,11 @@
       },
       {
         "label": "Symptoms",
-        "url": "symptoms/index.html",
+        "url": "#symptoms",
         "dropdownMenu": [
           {
             "label": "Heartburn",
-            "url": "#heartburn",
+            "url": "heartburn.html",
             "image": {
               "src": "/images/Rolaids-symptoms-heartburn.png"
             }
@@ -66,14 +66,7 @@
             "label": "Indigestion",
             "url": "#indigestion",
             "image": {
-              "src": "/images/Rolaids-"
-            }
-          },
-          {
-            "label": "Dropdown 4",
-            "url": "#dropdown4",
-            "image": {
-              "src": "http://placehold.it/200"
+              "src": "/images/Rolaids-symptoms-indigestion.png"
             }
           }
         ]
