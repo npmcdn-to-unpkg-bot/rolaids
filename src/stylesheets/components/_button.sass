@@ -11,21 +11,39 @@
   &:active
     background: darken($btn-default-bg, 10%)
 
-  &--large
-    font-size: $btn-large-text
-    padding: $btn-large-pad 
 
-  &--primary
-    background: $btn-primary-bg
-    color: $btn-primary-color
 
-    &:hover
-      background: lighten($btn-primary-bg, 5%)
+.button--large
+  font-size: $btn-large-text
+  padding: $btn-large-pad
 
-    &:active
-      background: darken($btn-primary-bg, 10%)
 
-  &--secondary
-    &:hover
-      background: $btn-secondary-bg
-      color: $btn-secondary-color
+
+.button--primary
+  background: $btn-primary-bg
+  color: $btn-primary-color
+
+  &:hover
+    background: lighten($btn-primary-bg, 5%)
+
+  &:active
+    background: darken($btn-primary-bg, 10%)
+
+
+
+.button--secondary
+  &:hover
+    background: $btn-secondary-bg
+    color: $btn-secondary-color
+
+
+
+.button--emphasis
+  color: $btn-emphasis-color
+  background: $btn-emphasis-bg
+
+  &:hover
+    background: lighten($btn-emphasis-bg, 10%)
+
+  &:active
+    background: darken($btn-emphasis-bg, 10%)

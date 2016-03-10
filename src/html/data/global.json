@@ -165,19 +165,33 @@
             "src": "//placehold.it/300x100/cfcfcf"
           }
         }
-      }
+      },
+      "tabs": [
+        {
+          "buttonText": "Tab Item 1",
+          "content": "Meggings meh chillwave, chia intelligentsia lomo ethical gentrify blue bottle photo booth beard authentic gluten-free. Hashtag tousled jean shorts blog microdosing, paleo taxidermy kale chips deep v chicharrones plaid roof party listicle. Fingerstache authentic XOXO direct trade literally. Cardigan green juice tacos chia twee. Blog kombucha organic, tote bag listicle celiac marfa raw denim hella next level ennui. Before they sold out single-origin coffee brooklyn, twee 3 wolf moon tousled banjo cred. Biodiesel next level trust fund cray, fashion axe paleo butcher flannel twee gluten-free franzen."
+        },
+        {
+          "buttonText": "Tab Item 2",
+          "content": "Semiotics literally selfies authentic truffaut, waistcoat biodiesel flexitarian brooklyn keffiyeh vegan kale chips chia kinfolk. Chambray everyday carry vegan whatever, neutra readymade schlitz. Wayfarers 3 wolf moon meh, blog williamsburg chicharrones whatever. Direct trade man braid try-hard, salvia 3 wolf moon cold-pressed migas lomo keffiyeh pour-over messenger bag occupy ennui biodiesel actually. Forage tousled disrupt slow-carb, fap echo park green juice. Mlkshk venmo retro wolf austin ramps. Actually kale chips forage, DIY slow-carb chicharrones ugh skateboard pour-over."
+        },
+        {
+          "buttonText": "Tab Item 3",
+          "content": "Skateboard raw denim authentic cray, etsy you probably haven't heard of them aesthetic austin narwhal gentrify. Tofu vice twee celiac plaid raw denim. Drinking vinegar mixtape beard yuccie green juice YOLO. Freegan neutra asymmetrical mumblecore distillery. Umami raw denim twee man braid. Photo booth skateboard single-origin coffee, pinterest kogi lo-fi literally health goth PBR&B. Kombucha freegan dreamcatcher, biodiesel whatever put a bird on it PBR&B irony pop-up farm-to-table YOLO meh heirloom pabst wayfarers."
+        }
+      ]
     },
     "symptom": {
       "hero": {
         "backgroundImage": {
-          "src": "//placehold.it/1200x800"
+          "src": "images/Rolaids-heartburn-hero.jpg"
         },
         "caption": {
           "title": "Heartburn",
           "text": "That burning sensation in your throat caused by stomach acid backing up into your esophagus. Ouch."
         }
       },
-      "section": [
+      "sections": [
         {
           "class": "section-triangle",
           "nav": {
@@ -209,9 +223,18 @@
           }
         },
         {
+          "class": "section-default",
           "nav": {
             "link": "#what-triggers-heartburn",
             "label": "What triggers Heartburn?"
+          },
+          "content": {
+            "title": "More Symptoms",
+            "subtitle": "Symptoms",
+            "text": "Fuck yeah text",
+            "image": {
+              "src": "images/Rolaids-heartburn-3.jpg"
+            }
           }
         },
         {

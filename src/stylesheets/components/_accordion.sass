@@ -1,5 +1,5 @@
 .accordion
-  
+
   &__submenu
     display: none
 
@@ -7,13 +7,15 @@
     display: block
 
 
+
 .accordion-tabs
   +clearfix
   padding: 0
 
+
   .tab
     list-style: none
-    
+
     +media ($screen-large)
       display: inline
 
@@ -26,7 +28,7 @@
       display: inline-block
 
     &.is-active
-      @extend .button--secondary:hover
+      @extend .button--emphasis
 
   .tab-content
     display: none
