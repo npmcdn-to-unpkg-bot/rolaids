@@ -14,35 +14,35 @@
             "label": "Advanced Tablets",
             "url": "#advanced-tablet",
             "image": {
-              "src": "/images/Rolaids-products-drop-adv.png"
+              "src": "images/Rolaids-products-drop-adv.png"
             }
           },
           {
             "label": "Regular Tablets",
             "url": "#regular-tablet",
             "image": {
-              "src": "/images/Rolaids-products-drop-reg.png"
+              "src": "images/Rolaids-products-drop-reg.png"
             }
           },
           {
             "label": "Ultimate Tablets",
             "url": "#ultimate-tablet",
             "image": {
-              "src": "/images/Rolaids-products-drop-ult.png"
+              "src": "images/Rolaids-products-drop-ult.png"
             }
           },
           {
             "label": "Extra Strength Tablets",
             "url": "#extra-strength-tablet",
             "image": {
-              "src": "/images/Rolaids-products-drop-xtra.png"
+              "src": "images/Rolaids-products-drop-xtra.png"
             }
           }
         ]
       },
       {
         "label": "The Rolaids Advantage",
-        "url": "/rolaids-advantage.html"
+        "url": "rolaids-advantage.html"
       },
       {
         "label": "Symptoms",
@@ -52,38 +52,38 @@
             "label": "Heartburn",
             "url": "heartburn.html",
             "image": {
-              "src": "/images/Rolaids-symptoms-heartburn.png"
+              "src": "images/Rolaids-symptoms-heartburn.png"
             }
           },
           {
             "label": "Gas",
             "url": "#gas",
             "image": {
-              "src": "/images/Rolaids-symptoms-gas.png"
+              "src": "images/Rolaids-symptoms-gas.png"
             }
           },
           {
             "label": "Indigestion",
             "url": "#indigestion",
             "image": {
-              "src": "/images/Rolaids-symptoms-indigestion.png"
+              "src": "images/Rolaids-symptoms-indigestion.png"
             }
           }
         ]
       },
       {
         "label": "Coupons & Offers",
-        "url": "/coupon.html"
+        "url": "coupon.html"
       }
     ],
     "secondary": [
       {
         "label": "contact us",
-        "url": "/contact.html"
+        "url": "contact.html"
       },
       {
         "label": "where to buy",
-        "url": "/where-to-buy.html"
+        "url": "where-to-buy.html"
       }
     ]
   },
