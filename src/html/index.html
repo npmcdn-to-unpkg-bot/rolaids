@@ -4,9 +4,13 @@
 {% set pageController = "home" %}
 {% set pageAction = "show" %}
 
+{% block head %}
+  <link rel="stylesheet" href="https://npmcdn.com/flickity@1.1/dist/flickity.min.css">
+{% endblock %}
+
 {% block hero %}
-<section class="section carousel">
-  <div class="carousel-inner">
+<section class="carousel">
+  <div class="carousel-inner flickity">
     {% for item in page.home.carousel %}
     <div class="carousel-item">
       <video class="carousel-item__background carousel-item__background--video" src="{{ item.src }}" autoplay loop>
@@ -46,4 +50,5 @@
 {% endblock %}
 
 {% block javascript %}
+  <script src="https://npmcdn.com/flickity@1.1/dist/flickity.pkgd.min.js"></script>
 {% endblock %}

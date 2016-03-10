@@ -2,34 +2,39 @@
   color: $carousel-default-color
   position: relative
 
-  &-inner
-    overflow: hidden
 
-  &-item
-    position: relative
 
-    &__background
-      +size(100%)
-      object-fit: cover
-      object-position: center
+.carousel-inner
+  width: 100%
 
-      +media(max-width $screen-small)
-        height: 100vh
-      +media(min-width $screen-large)
-        height: 50vmax
 
-    &__caption
-      display: table
-      margin: auto
-      padding: 1rem
 
-      +position(absolute, null null 10% null)
-      +media(min-width $screen-medium)
-        width: 50%
-        max-width: 600px
-        left: 10%
+.carousel-item
+  position: relative
+
+
+
+.carousel-item__background
+
+    &--video
+      min-width: 100vw
+      width: 100%
+
+
 
 .carousel-item__caption
+  display: table
+  margin: auto
+  padding: 1rem
+
+
+  +position(absolute, null null 10% null)
+  +media(min-width $screen-medium)
+    width: 50vw
+    max-width: 600px
+    left: 10%
+
+
   &-title,
   &-text
     font-size: modular-scale(1)
@@ -40,3 +45,16 @@
   &-text
     margin-bottom: 2em
 
+
+
+.flickity-page-dots
+  display: none
+  visibility: none
+
+
+
+.flickity-prev-next-button
+  background: transparent !important
+
+  .arrow
+    fill: $white !important

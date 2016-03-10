@@ -20,7 +20,7 @@ function accordionTabs(target) {
       accordionTabs.find('.is-active').removeClass('is-active')
       $(this).addClass('is-active')
     }
-  }) 
+  })
 }
 
 
@@ -30,6 +30,8 @@ function accordionTabs(target) {
 const dropdown = function() {
 
 }
+
+
 
 //
 // Application "Controller"
@@ -46,6 +48,18 @@ const ROLAIDS = {
     },
 
     show: function() {
+      var $gallery = $('.flickity').flickity();
+
+      function onLoadeddata( event ) {
+        var cell = $gallery.flickity( 'getParentCell', event.target );
+        $gallery.flickity( 'cellSizeChange', cell && cell.element );
+      }
+
+      $gallery.find('video').each( function( i, video ) {
+        video.play();
+        $( video ).on( 'loadeddata', onLoadeddata );
+      });
+
     }
   }
 }
@@ -80,5 +94,5 @@ const UTIL = {
 // Initialize
 //
 document.addEventListener('DOMContentLoaded', function() {
-  UTIL.init() 
+  UTIL.init()
 }, false)
