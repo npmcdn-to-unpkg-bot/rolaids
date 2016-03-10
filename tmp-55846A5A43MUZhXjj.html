@@ -37,7 +37,7 @@
 
   
 </head>
-<body class="where-to-buy" data-controller="" data-action="">
+<body class="product" data-controller="product" data-action="show">
 
   <header class="header">
   <div class="container">
@@ -47,7 +47,7 @@
         <!-- Brand -->
         <div class="brand">
           <a href="/" class="brand__link">
-            <img src="/images/Rolaids-logo-415x114-a0f7525011.png" alt="Rolaids&reg;" class="brand__image img-responsive">
+            <img src="images/Rolaids-logo-415x114-a0f7525011.png" alt="Rolaids&reg;" class="brand__image img-responsive">
           </a>
         </div>
 
@@ -237,42 +237,57 @@
 
 
   
-<section class="hero" style="background-image: url()">
+<section class="hero" style="background-image: url(//placehold.it/1200x800)">
     <div class="container">
       <div class="hero-caption">
-        <h1 class="hero-caption__title">Where To Buy</h1>
+        <h1 class="hero-caption__title">
+          Rolaids<br>Advanced&reg; Tablets
+        </h1>
+        <p class="hero-caption__text">
+          It kicks acid and a whole lot more
+        </p>
+        <a class="hero-caption__button button button--large" href="#">Buy Now</a>
+      </div>
+
+      <div class="hero-product">
+        <img class="hero-product__image hero-product__image--large" src="//placehold.it/350/f0f0f0" alt="">
+        <img class="hero-product__image hero-product__image--small" src="//placehold.it/300x100/cfcfcf" alt="">
       </div>
     </div>
   </section>
 
 
   
-  <main class="content">
-    <div class="container">
-      <div class="filter-retailers">
-        <label for="retailers">More Retailers<label>
-        <select id="retailers" name="retailers">
-          <option>Albertsons</option>
-          <option>Amazon</option>
-          <option>CVS</option>
-          <option>Dollar General</option>
-        </select>
-      </div>
-
-      <div class="retailers">
-        <div class="retailers-block"><span class="sr-only">Amazon</span></div>
-        <div class="retailers-block"><span class="sr-only">CVS</span></div>
-        <div class="retailers-block"><span class="sr-only">Dollar General</span></div>
-        <div class="retailers-block"><span class="sr-only">Family Dollar</span></div>
-        <div class="retailers-block"><span class="sr-only">Rite Aid</span></div>
-        <div class="retailers-block"><span class="sr-only">Safeway</span></div>
-        <div class="retailers-block"><span class="sr-only">Super Valu</span></div>
-        <div class="retailers-block"><span class="sr-only">Target</span></div>
-        <div class="retailers-block"><span class="sr-only">Walgreens</span></div>
-        <div class="retailers-block"><span class="sr-only">Walmart</span></div>
-      </div>
-    </div>
-  </main>
+<main class="content">
+  <div class="container">
+    <ul class="accordion-tabs">
+      <li class="tab">
+        <a href="javascript:void(0)" class="is-active tab-link button button--secondary">Tab Item</a>
+        <div class="tab-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt pellentesque lorem.Nullam imperdiet sapien id purus pretium id aliquam mi ullamcorper.</p>
+        </div>
+      </li>
+      <li class="tab">
+        <a href="javascript:void(0)" class="tab-link button button--secondary">Another Tab</a>
+        <div class="tab-content">
+          <p>Ut laoreet augue et neque pretium non sagittis nibh pulvinar. Etiam ornare tincidunt orci quis ultrices. Pellentesque ac sapien ac purus gravida ullamcorper. Duis rhoncus sodales lacus, vitae adipiscing tellus pharetra sed. Praesent bibendum lacus quis metus condimentum ac accumsan orci vulputate.</p>
+        </div>
+      </li>
+      <li class="tab">
+        <a href="javascript:void(0)" class="tab-link button button--secondary">Third</a>
+        <div class="tab-content">
+          <p>Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero, viverra vel vestibulum in, porttitor ut sapien. Phasellus tempor lorem id justo ornare tincidunt. Nulla faucibus, purus eu placerat fermentum, velit mi iaculis nunc, bibendum tincidunt ipsum justo eu mauris. Nulla facilisi. Vestibulum vel lectus ac purus tempus suscipit nec sit amet eros. Nullam fringilla, enim eu lobortis dapibus, quam magna tincidunt nibh, sit amet imperdiet dolor justo congue turpis.</p>
+        </div>
+      </li>
+      <li class="tab">
+        <a href="javascript:void(0)" class="tab-link button button--secondary">Last Item</a>
+        <div class="tab-content">
+          <p>Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus dui urna.</p>
+        </div>
+      </li>
+    </ul>     
+  </div>
+</main>
 
 
   
