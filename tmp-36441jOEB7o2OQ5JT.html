@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="stylesheets/global-d4209b480d.css">
+  <link rel="stylesheet" href="stylesheets/global-f67a8ba2fe.css">
 
   <!-- Application Icons -->
   <!-- http://realfavicongenerator.net/ is the best! -->
@@ -38,8 +38,10 @@
 
 
   
+  <link rel="stylesheet" href="https://npmcdn.com/flickity@1.1/dist/flickity.min.css">
+
 </head>
-<body class="coupon" data-controller="" data-action="">
+<body class="home" data-controller="home" data-action="show">
 
   <header class="header">
   <div class="container">
@@ -239,23 +241,54 @@
 
 
   
-<section class="hero" style="background-image: url(//placehold.it/1200x800)">
-    <div class="container">
-      <div class="hero-caption">
-        <h1 class="hero-caption__title">Contact Us</h1>
+<section class="carousel">
+  <div class="carousel-inner flickity">
+    
+    <div class="carousel-item">
+      <video class="carousel-item__background carousel-item__background--video" src="https://player.vimeo.com/external/158368523.hd.mp4?s=be05de7e132c1645ef39aa9baccef32258d747f2&profile_id=113" autoplay loop>
+        <source src="https://player.vimeo.com/external/158368523.hd.mp4?s=be05de7e132c1645ef39aa9baccef32258d747f2&profile_id=113" />
+      </video>
+      <div class="carousel-item__caption">
+        <h2 class="carousel-item__caption-title">Headline 1 Goes Here</h2>
+        <p class="carousel-item__caption-text">Consectetur eaque magni fuga modi harum quam sequi officiis explicabo asperiores libero. Ratione eligendi placeat.</p>
+        <a class="carousel-item__caption-button button button--large" href="#">Learn More</a>
       </div>
     </div>
-  </section>
+    
+    <div class="carousel-item">
+      <video class="carousel-item__background carousel-item__background--video" src="https://player.vimeo.com/external/158388872.hd.mp4?s=4b0cb2dd121e0bb98f2bbe63ffb3ac95061a2eef&profile_id=119" autoplay loop>
+        <source src="https://player.vimeo.com/external/158388872.hd.mp4?s=4b0cb2dd121e0bb98f2bbe63ffb3ac95061a2eef&profile_id=119" />
+      </video>
+      <div class="carousel-item__caption">
+        <h2 class="carousel-item__caption-title">Headline 2 Goes Here</h2>
+        <p class="carousel-item__caption-text">Consectetur eaque magni fuga modi harum quam sequi officiis explicabo asperiores libero. Ratione eligendi placeat.</p>
+        <a class="carousel-item__caption-button button button--large" href="#">Learn More</a>
+      </div>
+    </div>
+    
+  </div>
+</section>
 
 
   
 <main class="content">
-  <div class="container">
-    <h1>Save $1.00 on Rolaids&reg;</h1>
-    <p></p>
-    <p><a class="button primary" href="">Download Coupon</a></p>
-    <img src="//placehold.it/500x500/ffffff" alt="Image Alt">
+  <div class="coupon-bar">
+    <a href="" class="coupon-bar__link">Save <span><sup>$</sup>1.00</span> on any Rolaids product</a>
   </div>
+
+  <section class="callout">
+    <div class="callout-block callout-block--first" style="background-image: url(http://lorempixel.com/800/800/cats)">
+      <h3 class="callout-block__title">Kick Acid And Gas</h3>
+      <a class="callout-block__button button button--primary" href="#">Learn More</a>
+      <a class="callout-block__button button" href="#">Watch The Video</a>
+    </div>
+    <div class="callout-block callout-block--last" style="background-image: url(http://lorempixel.com/800/800/cats)">
+      <p class="callout-block__text">
+        Rolaids Regular Strength Tablets <span class="text-emphasis--secondary">Neutralize 44% More Acid</span> Than Tums Regular
+      </p>
+      <a class="callout-block__button button button--secondary" href="#">Find Out How</a>
+    </div>
+  </section>
 </main>
 
 
@@ -309,5 +342,7 @@
   <script src="javascripts/shared-5fde48bdac9f1ca0cd1e.js"></script>
   <script src="javascripts/app-5fde48bdac9f1ca0cd1e.js"></script>
   
+  <script src="https://npmcdn.com/flickity@1.1/dist/flickity.pkgd.min.js"></script>
+
 </body>
 </html>
