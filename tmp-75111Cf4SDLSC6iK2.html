@@ -9,9 +9,11 @@
   <meta name="description" content=" Rolaids Meta Description  ">
 
   <title>Rolaids&reg;</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="stylesheets/global-9f2351c7a0.css">
+  <link rel="stylesheet" href="stylesheets/global-d4209b480d.css">
 
   <!-- Application Icons -->
   <!-- http://realfavicongenerator.net/ is the best! -->
@@ -36,10 +38,8 @@
 
 
   
-  <link rel="stylesheet" href="https://npmcdn.com/flickity@1.1/dist/flickity.min.css">
-
 </head>
-<body class="home" data-controller="home" data-action="show">
+<body class="product" data-controller="product" data-action="show">
 
   <header class="header">
   <div class="container">
@@ -239,54 +239,56 @@
 
 
   
-<section class="carousel">
-  <div class="carousel-inner flickity">
-    
-    <div class="carousel-item">
-      <video class="carousel-item__background carousel-item__background--video" src="https://player.vimeo.com/external/158368523.hd.mp4?s=be05de7e132c1645ef39aa9baccef32258d747f2&profile_id=113" autoplay loop>
-        <source src="https://player.vimeo.com/external/158368523.hd.mp4?s=be05de7e132c1645ef39aa9baccef32258d747f2&profile_id=113" />
-      </video>
-      <div class="carousel-item__caption">
-        <h2 class="carousel-item__caption-title">Headline 1 Goes Here</h2>
-        <p class="carousel-item__caption-text">Consectetur eaque magni fuga modi harum quam sequi officiis explicabo asperiores libero. Ratione eligendi placeat.</p>
-        <a class="carousel-item__caption-button button button--large" href="#">Learn More</a>
+<section class="hero" style="background-image: url(//placehold.it/1200x800)">
+    <div class="container">
+      <div class="hero-caption">
+        <h1 class="hero-caption__title">
+          Rolaids<br>Advanced&reg; Tablets
+        </h1>
+        <p class="hero-caption__text">
+          It kicks acid and a whole lot more
+        </p>
+        <a class="hero-caption__button button button--large" href="#">Buy Now</a>
+      </div>
+
+      <div class="hero-product">
+        <img class="hero-product__image hero-product__image--large" src="//placehold.it/350/f0f0f0" alt="">
+        <img class="hero-product__image hero-product__image--small" src="//placehold.it/300x100/cfcfcf" alt="">
       </div>
     </div>
-    
-    <div class="carousel-item">
-      <video class="carousel-item__background carousel-item__background--video" src="https://player.vimeo.com/external/158388872.hd.mp4?s=4b0cb2dd121e0bb98f2bbe63ffb3ac95061a2eef&profile_id=119" autoplay loop>
-        <source src="https://player.vimeo.com/external/158388872.hd.mp4?s=4b0cb2dd121e0bb98f2bbe63ffb3ac95061a2eef&profile_id=119" />
-      </video>
-      <div class="carousel-item__caption">
-        <h2 class="carousel-item__caption-title">Headline 2 Goes Here</h2>
-        <p class="carousel-item__caption-text">Consectetur eaque magni fuga modi harum quam sequi officiis explicabo asperiores libero. Ratione eligendi placeat.</p>
-        <a class="carousel-item__caption-button button button--large" href="#">Learn More</a>
-      </div>
-    </div>
-    
-  </div>
-</section>
+  </section>
 
 
   
 <main class="content">
-  <div class="coupon-bar">
-    <a href="" class="coupon-bar__link">Save $1.00 on any Rolaids product</a>
+  <div class="container">
+    <ul class="accordion-tabs">
+      <li class="tab">
+        <a href="javascript:void(0)" class="is-active tab-link button button--secondary">Tab Item</a>
+        <div class="tab-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt pellentesque lorem.Nullam imperdiet sapien id purus pretium id aliquam mi ullamcorper.</p>
+        </div>
+      </li>
+      <li class="tab">
+        <a href="javascript:void(0)" class="tab-link button button--secondary">Another Tab</a>
+        <div class="tab-content">
+          <p>Ut laoreet augue et neque pretium non sagittis nibh pulvinar. Etiam ornare tincidunt orci quis ultrices. Pellentesque ac sapien ac purus gravida ullamcorper. Duis rhoncus sodales lacus, vitae adipiscing tellus pharetra sed. Praesent bibendum lacus quis metus condimentum ac accumsan orci vulputate.</p>
+        </div>
+      </li>
+      <li class="tab">
+        <a href="javascript:void(0)" class="tab-link button button--secondary">Third</a>
+        <div class="tab-content">
+          <p>Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero, viverra vel vestibulum in, porttitor ut sapien. Phasellus tempor lorem id justo ornare tincidunt. Nulla faucibus, purus eu placerat fermentum, velit mi iaculis nunc, bibendum tincidunt ipsum justo eu mauris. Nulla facilisi. Vestibulum vel lectus ac purus tempus suscipit nec sit amet eros. Nullam fringilla, enim eu lobortis dapibus, quam magna tincidunt nibh, sit amet imperdiet dolor justo congue turpis.</p>
+        </div>
+      </li>
+      <li class="tab">
+        <a href="javascript:void(0)" class="tab-link button button--secondary">Last Item</a>
+        <div class="tab-content">
+          <p>Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus dui urna.</p>
+        </div>
+      </li>
+    </ul>     
   </div>
-
-  <section class="callout">
-    <div class="callout-block callout-block--first" style="background-image: url(http://lorempixel.com/800/800/cats)">
-      <h3 class="callout-block__title">Kick Acid And Gas</h3>
-      <a class="callout-block__button button button--primary" href="#">Learn More</a>
-      <a class="callout-block__button button" href="#">Watch The Video</a>
-    </div>
-    <div class="callout-block callout-block--last" style="background-image: url(http://lorempixel.com/800/800/cats)">
-      <p class="callout-block__text">
-        Rolaids Regular Strength Tablets <span class="text-emphasis--secondary">Neutralize 44% More Acid</span> Than Tums Regular
-      </p>
-      <a class="callout-block__button button button--secondary" href="#">Find Out How</a>
-    </div>
-  </section>
 </main>
 
 
@@ -306,24 +308,24 @@
     </div>
     <nav class="footer__navigation">
       <ul>
-        <li><a class="footer__navigation-link" href="#">The Rolaids Advantage</a></li> 
-        <li><a class="footer__navigation-link" href="">Coupons & Offers</a></li> 
+        <li><a class="footer__navigation-link" href="#">The Rolaids Advantage</a></li>
+        <li><a class="footer__navigation-link" href="">Coupons & Offers</a></li>
       </ul>
       <ul>
-        <li><a class="footer__navigation-link" href="">Heartburn & Indigestion</a></li> 
-        <li><a class="footer__navigation-link" href="">Heartburn</a></li> 
-        <li><a class="footer__navigation-link" href="">Acid Indigestion</a></li> 
+        <li><a class="footer__navigation-link" href="">Heartburn & Indigestion</a></li>
+        <li><a class="footer__navigation-link" href="">Heartburn</a></li>
+        <li><a class="footer__navigation-link" href="">Acid Indigestion</a></li>
       </ul>
       <ul>
-        <li><a class="footer__navigation-link" href="">More</a></li> 
-        <li><a class="footer__navigation-link" href="">FAQ</a></li> 
-        <li><a class="footer__navigation-link" href="">Contact Us</a></li> 
-        <li><a class="footer__navigation-link" href="">Privacy Policy</a></li> 
-        <li><a class="footer__navigation-link" href="">Terms Of Use</a></li> 
+        <li><a class="footer__navigation-link" href="">More</a></li>
+        <li><a class="footer__navigation-link" href="">FAQ</a></li>
+        <li><a class="footer__navigation-link" href="">Contact Us</a></li>
+        <li><a class="footer__navigation-link" href="">Privacy Policy</a></li>
+        <li><a class="footer__navigation-link" href="">Terms Of Use</a></li>
       </ul>
     </nav>
     <div class="brand">
-      <img class="brand-image" src="/images/logo_chattem-63c0025c4b.png" alt="">
+      <img class="brand-image" src="images/logo_chattem-63c0025c4b.png" alt="">
       <span class="brand-title">A Sanofi Company</span>
       <p class="brand-text">
         &copy;<script>document.write(new Date().getFullYear());</script>
@@ -340,7 +342,5 @@
   <script src="javascripts/shared-5fde48bdac9f1ca0cd1e.js"></script>
   <script src="javascripts/app-5fde48bdac9f1ca0cd1e.js"></script>
   
-  <script src="https://npmcdn.com/flickity@1.1/dist/flickity.pkgd.min.js"></script>
-
 </body>
 </html>

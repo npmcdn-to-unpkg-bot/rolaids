@@ -14,6 +14,14 @@
   "fonts/icons.ttf": "fonts/icons-ba30ee8ea0.ttf",
   "fonts/icons.woff": "fonts/icons-56c53ac969.woff",
   "fonts/icons.woff2": "fonts/icons-d3d53d542e.woff2",
+  "images/Rolaids-heartburn-1.jpg": "images/Rolaids-heartburn-1-b0acd12462.jpg",
+  "images/Rolaids-heartburn-2.png": "images/Rolaids-heartburn-2-93d4313ffa.png",
+  "images/Rolaids-heartburn-3.jpg": "images/Rolaids-heartburn-3-9c69341229.jpg",
+  "images/Rolaids-heartburn-4.jpg": "images/Rolaids-heartburn-4-de4aae08a4.jpg",
+  "images/Rolaids-heartburn-5.jpg": "images/Rolaids-heartburn-5-d0c4a70541.jpg",
+  "images/Rolaids-heartburn-6.jpg": "images/Rolaids-heartburn-6-faaebeb56d.jpg",
+  "images/Rolaids-heartburn-7.jpg": "images/Rolaids-heartburn-7-eb5290ff0b.jpg",
+  "images/Rolaids-heartburn-hero.jpg": "images/Rolaids-heartburn-hero-e9204be104.jpg",
   "images/Rolaids-logo-200x50.png": "images/Rolaids-logo-200x50-a9e6b4e67d.png",
   "images/Rolaids-logo-415x114.png": "images/Rolaids-logo-415x114-a0f7525011.png",
   "images/Rolaids-products-drop-adv.png": "images/Rolaids-products-drop-adv-b792168c69.png",
@@ -29,5 +37,5 @@
   "images/sprites.svg": "images/sprites-0325b3f89a.svg",
   "javascripts/app.js": "javascripts/app-5fde48bdac9f1ca0cd1e.js",
   "javascripts/shared.js": "javascripts/shared-5fde48bdac9f1ca0cd1e.js",
-  "stylesheets/global.css": "stylesheets/global-9f2351c7a0.css"
+  "stylesheets/global.css": "stylesheets/global-d4209b480d.css"
 }
