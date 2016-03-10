@@ -8,19 +8,36 @@ body.home
 
   .coupon-bar
     background: $light-grey
-    padding: 1rem
     text-align: center
+
+    a
+      display: block
+      padding: 1rem 1rem 1.2rem
+      text-decoration: none
+      text-transform: uppercase
+      word-spacing: 0.2rem
+
+      span
+        color: $color-primary
+        font-size: modular-scale(1)
+        font-weight: bold
 
 
 
   .callout
+    display: table
+    width: 100%
 
     &-block
       background-size: cover
       background-position: center
+
+      display: table-cell
       padding: 1rem
       min-height: 360px
       height: 35vmax
+      width: 50%
+      vertical-align: middle
 
 
   .callout-block--first
@@ -34,3 +51,12 @@ body.home
       color: $red
       font-size: modular-scale(6)
       text-shadow: 0 1px 5px rgba($dark-grey, 0.6)
+
+  .callout-block--last
+    .callout-block__text
+      color: $white
+      font-size: modular-scale(1)
+
+      +media(min-width $screen-medium)
+        width: 75%
+        max-width: 450px

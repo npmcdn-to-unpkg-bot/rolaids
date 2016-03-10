@@ -2,7 +2,8 @@
   +media(min-width $screen-small)
     &__list-item[aria-hidden="true"]
       display: none
-
+  a
+    font-family: $heading-font-family
 
 
 .nav--primary
@@ -67,6 +68,10 @@
   &:hover
     display: block
 
+  a
+    color: $color-secondary
+    opacity: 0.5
+    text-decoration: none
 
 
 .nav-dropdown__list
@@ -81,3 +86,6 @@
   display: table-cell
   padding: 0 1rem
 
+  &:hover
+    a
+      opacity: 1

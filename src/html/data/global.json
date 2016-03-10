@@ -127,7 +127,7 @@
         }
       ],
       "coupon": {
-        "text": "Save $1.00 on any Rolaids product"
+        "text": "Save <span><sup>$</sup>1.00</span> on any Rolaids product"
       },
       "callout": {
         "first": {
@@ -189,7 +189,7 @@
             "subtitle": "Overview",
             "text": "Nothing can ruin a good time faster than heartburn.",
             "image": {
-              "src": "//lorempixel.com/800/600/sports"
+              "src": "images/Rolaids-heartburn-1.jpg"
             }
           }
         },
@@ -204,7 +204,7 @@
             "subtitle": "Symptoms",
             "text": "The primary symptom of heartburn is a painful, burning sensaiton in the chest",
             "image": {
-              "src": "//lorempixel.com/800/600"
+              "src": "images/Rolaids-heartburn-2.png"
             }
           }
         },
