@@ -1,0 +1,44 @@
+{% extends 'layouts/application.html' %}
+
+{% set pageClass = "product advancedTablets" %}
+{% set pageController = "advancedTablets" %}
+{% set pageAction = "show" %}
+
+{% block hero %}
+<section class="hero" style="background-image: url({{ page.advancedTablets.hero.backgroundImage.src }})">
+    <div class="container">
+      <div class="hero-caption">
+        <h1 class="hero-caption__title">
+          {{ page.advancedTablets.hero.caption.title }}
+        </h1>
+        <p class="hero-caption__text">
+          {{ page.advancedTablets.hero.caption.text }}
+        </p>
+        <a class="hero-caption__button button button--large" href="#">Buy Now</a>
+      </div>
+
+      <div class="hero-product">
+        <img class="hero-product__image hero-product__image--large" src="{{ page.advancedTablets.hero.product.large.src }}" alt="">
+        <img class="hero-product__image hero-product__image--small" src="{{ page.advancedTablets.hero.product.small.src }}" alt="">
+      </div>
+    </div>
+  </section>
+{% endblock %}
+
+
+{% block content %}
+<main class="content">
+  <div class="container">
+    <ul class="accordion-tabs">
+      {% for tab in page.advancedTablets.tabs %}
+      <li class="tab">
+        <a href="javascript:void(0)" class="{% if tabs.index == 1 %} is-active {% endif %} tab-link button">{{ tab.buttonText }}</a>
+        <div class="tab-content">
+          <p>{{ tab.content }}</p>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</main>
+{% endblock %}
