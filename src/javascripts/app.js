@@ -34,20 +34,58 @@ const dropdown = function() {
 
 
 //
+// Navigation
+//
+const navToggle = function(target, toggleBtn) {
+  // Toggle menu
+  $(toggleBtn).click(function(e) {
+    e.stopPropagation() // prevents document.click from firing
+    $(target).toggle('fast')
+    $(target).toggleClass('is-open')
+  })
+
+  // Hide menu if anywhere is clicked
+  $(document).click(function() {
+    if ($(target).hasClass('is-open')){
+      $(target).slideUp('fast')
+    }
+  })
+}
+
+
+
+//
+// Video Modal
+//
+const videoModal = function() {
+  var $videoBtn = $('[data-video]'),
+      $videoSrc = $videoBtn.attr('data-video')
+
+  $videoBtn.click(function() {
+      alert($videoSrc)
+  })
+}
+
+
+
+//
 // Application "Controller"
 //
 const ROLAIDS = {
   common: {
     init: function() {
       accordionTabs('.accordion-tabs')
+      navToggle('#app_nav', '.nav-toggle')
     },
   },
 
   home: {
     init: function() {
+      videoModal()
     },
 
     show: function() {
+      // Prevent video loading before carousel is done
       var $gallery = $('.flickity').flickity();
 
       function onLoadeddata( event ) {
