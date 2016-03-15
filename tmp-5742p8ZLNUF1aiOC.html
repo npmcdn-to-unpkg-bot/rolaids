@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="stylesheets/global-dd52682b26.css">
+  <link rel="stylesheet" href="stylesheets/global-ae679022fe.css">
 
   <!-- Application Icons -->
   <!-- http://realfavicongenerator.net/ is the best! -->
@@ -38,10 +38,8 @@
 
 
   
-  <link rel="stylesheet" href="https://npmcdn.com/flickity@1.1/dist/flickity.min.css">
-
 </head>
-<body class="home" data-controller="home" data-action="show">
+<body class="where-to-buy" data-controller="whereToBuy" data-action="show">
 
   <header class="header">
   <div class="container">
@@ -241,57 +239,42 @@
 
 
   
-<section class="carousel">
-  <div class="carousel-inner flickity">
-    
-    <div class="carousel-item">
-      <img class="carousel-item__background carousel-item__background--image" src="//lorempixel.com/1200/800" alt="Rolaids Image Alt">
-      <video class="carousel-item__background carousel-item__background--video" src="https://player.vimeo.com/external/158368523.hd.mp4?s=be05de7e132c1645ef39aa9baccef32258d747f2&profile_id=113" autoplay loop muted>
-        <source src="" />
-      </video>
-      <div class="carousel-item__caption">
-        <h2 class="carousel-item__caption-title">Headline 1 Goes Here</h2>
-        <p class="carousel-item__caption-text">Consectetur eaque magni fuga modi harum quam sequi officiis explicabo asperiores libero. Ratione eligendi placeat.</p>
-        <a class="carousel-item__caption-button button button--large" href="#">Learn More</a>
+<section class="hero" style="background-image: url(http://placehold.it/1200x800)">
+    <div class="container">
+      <div class="hero-caption">
+        <h1 class="hero-caption__title">Where To Buy</h1>
       </div>
     </div>
-    
-    <div class="carousel-item">
-      <img class="carousel-item__background carousel-item__background--image" src="//lorempixel.com/1200/800" alt="Rolaids Image Alt">
-      <video class="carousel-item__background carousel-item__background--video" src="https://player.vimeo.com/external/158388872.hd.mp4?s=4b0cb2dd121e0bb98f2bbe63ffb3ac95061a2eef&profile_id=119" autoplay loop muted>
-        <source src="" />
-      </video>
-      <div class="carousel-item__caption">
-        <h2 class="carousel-item__caption-title">Headline 2 Goes Here</h2>
-        <p class="carousel-item__caption-text">Consectetur eaque magni fuga modi harum quam sequi officiis explicabo asperiores libero. Ratione eligendi placeat.</p>
-        <a class="carousel-item__caption-button button button--large" href="#">Learn More</a>
-      </div>
-    </div>
-    
-  </div>
-</section>
+  </section>
 
 
   
-<main class="content">
-  <div class="coupon-bar">
-    <a href="coupon.html" class="coupon-bar__link">Save <span><sup>$</sup>1.00</span> on any Rolaids product</a>
-  </div>
+  <main class="content">
+    <div class="container">
+      <div class="filter-retailers">
+        <label for="retailers">More Retailers<label>
+        <select id="retailers" name="retailers">
+          <option>Albertsons</option>
+          <option>Amazon</option>
+          <option>CVS</option>
+          <option>Dollar General</option>
+        </select>
+      </div>
 
-  <section class="callout">
-    <div class="callout-block callout-block--first" style="background-image: url(http://lorempixel.com/800/800/cats)">
-      <h3 class="callout-block__title">Kick Acid And Gas</h3>
-      <a class="callout-block__button button button--primary" href="rolaids-advantage.html">Learn More</a>
-      <a class="callout-block__button button" href="javascript:;" data-video="video.mp4">Watch The Video</a>
+      <div class="retailers">
+        <div class="retailers-block"><span class="sr-only">Amazon</span></div>
+        <div class="retailers-block"><span class="sr-only">CVS</span></div>
+        <div class="retailers-block"><span class="sr-only">Dollar General</span></div>
+        <div class="retailers-block"><span class="sr-only">Family Dollar</span></div>
+        <div class="retailers-block"><span class="sr-only">Rite Aid</span></div>
+        <div class="retailers-block"><span class="sr-only">Safeway</span></div>
+        <div class="retailers-block"><span class="sr-only">Super Valu</span></div>
+        <div class="retailers-block"><span class="sr-only">Target</span></div>
+        <div class="retailers-block"><span class="sr-only">Walgreens</span></div>
+        <div class="retailers-block"><span class="sr-only">Walmart</span></div>
+      </div>
     </div>
-    <div class="callout-block callout-block--last" style="background-image: url(http://lorempixel.com/800/800/cats)">
-      <p class="callout-block__text">
-        Rolaids Regular Strength Tablets <span class="text-emphasis--secondary">Neutralize 44% More Acid</span> Than Tums Regular
-      </p>
-      <a class="callout-block__button button button--secondary" href="rolaids-advantage.html">Find Out How</a>
-    </div>
-  </section>
-</main>
+  </main>
 
 
   
@@ -349,7 +332,5 @@
   <script src="javascripts/shared-8c1f83fa9581818eaa03.js"></script>
   <script src="javascripts/app-8c1f83fa9581818eaa03.js"></script>
   
-  <script src="https://npmcdn.com/flickity@1.1/dist/flickity.pkgd.min.js"></script>
-
 </body>
 </html>
