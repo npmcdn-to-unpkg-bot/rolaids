@@ -9,20 +9,19 @@
     </div>
     <nav class="footer__navigation">
       <ul>
-        <li><a class="footer__navigation-link" href="#">The Rolaids Advantage</a></li>
-        <li><a class="footer__navigation-link" href="">Coupons & Offers</a></li>
+        {% for item in footer.navList1 %}
+          <li><a class="footer__navigation-link" href="{{ item.link }}">{{ item.label }}</a></li>
+        {% endfor %}
       </ul>
       <ul>
-        <li><a class="footer__navigation-link" href="">Heartburn & Indigestion</a></li>
-        <li><a class="footer__navigation-link" href="">Heartburn</a></li>
-        <li><a class="footer__navigation-link" href="">Acid Indigestion</a></li>
+        {% for item in footer.navList2 %}
+          <li><a class="footer__navigation-link" href="{{ item.link }}">{{ item.label }}</a></li>
+        {% endfor %}
       </ul>
       <ul>
-        <li><a class="footer__navigation-link" href="">More</a></li>
-        <li><a class="footer__navigation-link" href="">FAQ</a></li>
-        <li><a class="footer__navigation-link" href="">Contact Us</a></li>
-        <li><a class="footer__navigation-link" href="">Privacy Policy</a></li>
-        <li><a class="footer__navigation-link" href="">Terms Of Use</a></li>
+        {% for item in footer.navList3 %}
+          <li><a class="footer__navigation-link" href="{{ item.link }}">{{ item.label }}</a></li>
+        {% endfor %}
       </ul>
     </nav>
     <div class="brand">

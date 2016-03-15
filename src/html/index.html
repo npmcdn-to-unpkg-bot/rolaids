@@ -13,7 +13,8 @@
   <div class="carousel-inner flickity">
     {% for item in page.home.carousel %}
     <div class="carousel-item">
-      <video class="carousel-item__background carousel-item__background--video" src="{{ item.src }}" autoplay loop>
+      <img class="carousel-item__background carousel-item__background--image" src="{{ item.image.src }}" alt="{{ item.image.alt }}">
+      <video class="carousel-item__background carousel-item__background--video" src="{{ item.video.src }}" autoplay loop muted>
         <source src="{{ item.src }}" />
       </video>
       <div class="carousel-item__caption">
@@ -37,13 +38,13 @@
     <div class="callout-block callout-block--first" style="background-image: url({{ page.home.callout.first.backgroundImage }})">
       <h3 class="callout-block__title">{{ page.home.callout.first.title }}</h3>
       <a class="callout-block__button button button--primary" href="{{ page.home.callout.first.button1.link }}">{{ page.home.callout.first.button1.text }}</a>
-      <a class="callout-block__button button" href="{{ page.home.callout.first.button2.link }}">{{ page.home.callout.first.button2.text }}</a>
+      <a class="callout-block__button button" href="javascript:;" data-video="{{ page.home.callout.first.video.src }}">{{ page.home.callout.first.button2.text }}</a>
     </div>
     <div class="callout-block callout-block--last" style="background-image: url({{ page.home.callout.last.backgroundImage }})">
       <p class="callout-block__text">
         {{ page.home.callout.last.text }}
       </p>
-      <a class="callout-block__button button button--secondary" href="#">Find Out How</a>
+      <a class="callout-block__button button button--secondary" href="{{ page.home.callout.last.link }}">Find Out How</a>
     </div>
   </section>
 </main>

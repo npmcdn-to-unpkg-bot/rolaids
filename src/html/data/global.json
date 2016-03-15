@@ -8,32 +8,32 @@
     "primary": [
       {
         "label": "Products",
-        "url": "products.html",
+        "url": "#products",
         "dropdownMenu": [
           {
             "label": "Advanced Tablets",
-            "url": "#advanced-tablet",
+            "url": "advanced-tablets.html",
             "image": {
               "src": "images/Rolaids-products-drop-adv.png"
             }
           },
           {
             "label": "Regular Tablets",
-            "url": "#regular-tablet",
+            "url": "regular-tablets.html",
             "image": {
               "src": "images/Rolaids-products-drop-reg.png"
             }
           },
           {
             "label": "Ultimate Tablets",
-            "url": "#ultimate-tablet",
+            "url": "ultimate-tablets.html",
             "image": {
               "src": "images/Rolaids-products-drop-ult.png"
             }
           },
           {
             "label": "Extra Strength Tablets",
-            "url": "#extra-strength-tablet",
+            "url": "extra-strength-tablets.html",
             "image": {
               "src": "images/Rolaids-products-drop-xtra.png"
             }
@@ -57,14 +57,14 @@
           },
           {
             "label": "Gas",
-            "url": "#gas",
+            "url": "gas.html",
             "image": {
               "src": "images/Rolaids-symptoms-gas.png"
             }
           },
           {
             "label": "Indigestion",
-            "url": "#indigestion",
+            "url": "indigestion.html",
             "image": {
               "src": "images/Rolaids-symptoms-indigestion.png"
             }
@@ -104,11 +104,49 @@
       "url": "https://instagram.com/rolaids"
     }
   ],
+  "footer": {
+    "navList1": [
+      {
+        "link": "#",
+        "label": "Link 1"
+      },
+      {
+        "link": "#",
+        "label": "Link 2"
+      }
+    ],
+    "navList2": [
+      {
+        "link": "#",
+        "label": "Link 1"
+      },
+      {
+        "link": "#",
+        "label": "Link 2"
+      }
+    ],
+    "navList3": [
+      {
+        "link": "#",
+        "label": "Link 1"
+      },
+      {
+        "link": "#",
+        "label": "Link 2"
+      }
+    ]
+  },
   "page": {
     "home": {
       "carousel": [
         {
-          "src": "https://player.vimeo.com/external/158368523.hd.mp4?s=be05de7e132c1645ef39aa9baccef32258d747f2&profile_id=113",
+          "video": {
+            "src": "https://player.vimeo.com/external/158368523.hd.mp4?s=be05de7e132c1645ef39aa9baccef32258d747f2&profile_id=113"
+          },
+          "image": {
+            "alt": "Rolaids Image Alt",
+            "src": "//lorempixel.com/1200/800"
+          },
           "caption": {
             "title": "Headline 1 Goes Here",
             "text": "Consectetur eaque magni fuga modi harum quam sequi officiis explicabo asperiores libero. Ratione eligendi placeat.",
@@ -117,7 +155,13 @@
           }
         },
         {
-          "src": "https://player.vimeo.com/external/158388872.hd.mp4?s=4b0cb2dd121e0bb98f2bbe63ffb3ac95061a2eef&profile_id=119",
+          "video": {
+            "src": "https://player.vimeo.com/external/158388872.hd.mp4?s=4b0cb2dd121e0bb98f2bbe63ffb3ac95061a2eef&profile_id=119"
+          },
+          "image": {
+            "alt": "Rolaids Image Alt",
+            "src": "//lorempixel.com/1200/800"
+          },
           "caption": {
             "title": "Headline 2 Goes Here",
             "text": "Consectetur eaque magni fuga modi harum quam sequi officiis explicabo asperiores libero. Ratione eligendi placeat.",
@@ -127,6 +171,7 @@
         }
       ],
       "coupon": {
+        "link": "coupon.html",
         "text": "Save <span><sup>$</sup>1.00</span> on any Rolaids product"
       },
       "callout": {
@@ -135,26 +180,62 @@
           "title": "Kick Acid And Gas",
           "button1": {
             "text": "Learn More",
-            "link": "#"
+            "link": "rolaids-advantage.html"
           },
           "button2": {
-            "text": "Watch The Video",
-            "link": "#"
+            "text": "Watch The Video"
+          },
+          "video": {
+            "src": "video.mp4"
           }
         },
         "last": {
           "backgroundImage": "http://lorempixel.com/800/800/cats",
+          "link": "rolaids-advantage.html",
           "text": "Rolaids Regular Strength Tablets <span class=\"text-emphasis--secondary\">Neutralize 44% More Acid</span> Than Tums Regular"
         }
       }
     },
-    "product": {
+    "advancedTablets": {
       "hero": {
         "backgroundImage": {
           "src": "//placehold.it/1200x800"
         },
         "caption": {
           "title": "Rolaids<br>Advanced&reg; Tablets",
+          "text": "It kicks acid and a whole lot more"
+        },
+        "product": {
+          "large": {
+            "src": "//placehold.it/350/f0f0f0"
+          },
+          "small": {
+            "src": "//placehold.it/300x100/cfcfcf"
+          }
+        }
+      },
+      "tabs": [
+        {
+          "buttonText": "Sizes & Flavors",
+          "content": "<ul><li>60 Count Bottle</li><li>10 count Roll</li><li>3-Roll Pack</li></ul>"
+        },
+        {
+          "buttonText": "Product Details",
+          "content": "<p>USES: Relieves: Heartburn, Sour stomach, Acid indigestion, Upset stomach associated with these symptoms, Pressure and bloating commonly referred to as gas.</p> <p>WARNINGS: Ask a doctor or pharmacist before use if you are now taking a prescription drug. Antacids may interact with certain prescription drugs. When using this product: do not take more than 7 tablets in a 24-hour period, do not use the maximum dosage for more than 2 weeks. Stop use and ask doctor if symptoms last more than 2 weeks. Keep out of reach of children.</p> <p>DIRECTIONS: Chew 2-3 tablets as symptoms occur, or as directed by a doctor.  </p> <p>OTHER INFORMATION: Each tablet contains: calcium 400 mg, magnesium 85 mg</p>"
+        },
+        {
+          "buttonText": "Tab Item 3",
+          "content": "Skateboard raw denim authentic cray, etsy you probably haven't heard of them aesthetic austin narwhal gentrify. Tofu vice twee celiac plaid raw denim. Drinking vinegar mixtape beard yuccie green juice YOLO. Freegan neutra asymmetrical mumblecore distillery. Umami raw denim twee man braid. Photo booth skateboard single-origin coffee, pinterest kogi lo-fi literally health goth PBR&B. Kombucha freegan dreamcatcher, biodiesel whatever put a bird on it PBR&B irony pop-up farm-to-table YOLO meh heirloom pabst wayfarers."
+        }
+      ]
+    },
+    "regularTablets": {
+      "hero": {
+        "backgroundImage": {
+          "src": "//placehold.it/1200x800"
+        },
+        "caption": {
+          "title": "Rolaids<br>Regular&reg; Tablets",
           "text": "It kicks acid and a whole lot more"
         },
         "product": {
@@ -181,7 +262,7 @@
         }
       ]
     },
-    "symptom": {
+    "heartburn": {
       "hero": {
         "backgroundImage": {
           "src": "images/Rolaids-heartburn-hero.jpg"
@@ -193,6 +274,7 @@
       },
       "sections": [
         {
+          "id": "what-is-heartburn",
           "class": "section-triangle",
           "nav": {
             "link": "#what-is-heartburn",
@@ -208,6 +290,7 @@
           }
         },
         {
+          "id": "what-are-the-symptoms",
           "class": "section-display",
           "nav": {
             "link": "#what-are-the-symptoms",
@@ -245,6 +328,134 @@
         }
       ]
     },
+    "gas": {
+      "hero": {
+        "backgroundImage": {
+          "src": "images/Rolaids-gas-hero.jpg"
+        },
+        "caption": {
+          "title": "Gas",
+          "text": "Farting is gross"
+        }
+      },
+      "sections": [
+        {
+          "class": "section-triangle",
+          "nav": {
+            "link": "#what-is-farting",
+            "label": "What is Farting?"
+          },
+          "content": {
+            "title": "What is Fartburn?",
+            "subtitle": "Overview",
+            "text": "Nothing can ruin a good time faster than heartburn.",
+            "image": {
+              "src": "images/Rolaids-gas-1.jpg"
+            }
+          }
+        },
+        {
+          "class": "section-display",
+          "nav": {
+            "link": "#what-are-the-symptoms",
+            "label": "What are the symptoms of Fartburn?"
+          },
+          "content": {
+            "title": "Fartburn Symptoms",
+            "subtitle": "Symptoms",
+            "text": "The primary symptom of heartburn is a painful, burning sensaiton in the chest",
+            "image": {
+              "src": "images/Rolaids-gas-2.jpg"
+            }
+          }
+        },
+        {
+          "class": "section-default",
+          "nav": {
+            "link": "#what-triggers-fartburn",
+            "label": "What triggers Fartburn?"
+          },
+          "content": {
+            "title": "More Symptoms",
+            "subtitle": "Symptoms",
+            "text": "Fuck yeah farts",
+            "image": {
+              "src": "images/Rolaids-gas-3.jpg"
+            }
+          }
+        },
+        {
+          "nav": {
+            "link": "#what-prevents-fartburn",
+            "label": "What can I do to help prevent Fartburn?"
+          }
+        }
+      ]
+    },
+    "indigestion": {
+      "hero": {
+        "backgroundImage": {
+          "src": "images/Rolaids-indigestion-hero.jpg"
+        },
+        "caption": {
+          "title": "Acid Indigestion",
+          "text": "Diarrhea is gross"
+        }
+      },
+      "sections": [
+        {
+          "class": "section-triangle",
+          "nav": {
+            "link": "#what-is-diarrhea",
+            "label": "What is Dairrhea?"
+          },
+          "content": {
+            "title": "What is Diarrhea?",
+            "subtitle": "Overview",
+            "text": "Nothing can ruin a good time faster than diarrhea.",
+            "image": {
+              "src": "images/Rolaids-indigestion-1.jpg"
+            }
+          }
+        },
+        {
+          "class": "section-display",
+          "nav": {
+            "link": "#what-are-the-symptoms",
+            "label": "What are the symptoms of Diarrhea?"
+          },
+          "content": {
+            "title": "Diarrhea Symptoms",
+            "subtitle": "Symptoms",
+            "text": "The primary symptom of diarrhea is a painful, burning sensaiton in the chest",
+            "image": {
+              "src": "images/Rolaids-indigestion-2.png"
+            }
+          }
+        },
+        {
+          "class": "section-default",
+          "nav": {
+            "link": "#what-triggers-diarrhea",
+            "label": "What triggers Diarrhea?"
+          },
+          "content": {
+            "title": "More Symptoms",
+            "subtitle": "Symptoms",
+            "text": "Fuck yeah poop",
+            "image": {
+              "src": "images/Rolaids-indigestion-3.jpg"
+            }
+          }
+        },
+        {
+          "nav": {
+            "link": "#what-prevents-diarrhea",
+            "label": "What can I do to help prevent Diarrhea?"
+          }
+        }
+      ]
+    },
     "coupon": {
       "hero": {
         "backgroundImage": {
@@ -275,6 +486,16 @@
       },
       "productImage": {
         "src": "http://placehold.it/500/ffffff"
+      }
+    },
+    "whereToBuy": {
+      "hero": {
+        "backgroundImage": {
+          "src": "http://placehold.it/1200x800"
+        },
+        "caption": {
+          "title": "Where to Buy"
+        }
       }
     }
   }

@@ -1,9 +1,11 @@
 .header
-  background: $header-bg
+  background: $white
 
-  width: 100%
-  +position(absolute, 0 null null 0)
-  z-index: 1
+  +media(min-width $screen-large)
+    background: $header-bg
+    width: 100%
+    +position(absolute, 0 null null 0)
+    z-index: 5
 
 
   .container
@@ -24,6 +26,7 @@
     display: none
     +media(max-width $screen-small)
       display: block
+      margin-left: 1rem
 
 
 

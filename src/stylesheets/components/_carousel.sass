@@ -4,6 +4,7 @@
 
 
 
+
 .carousel-inner
   width: 100%
 
@@ -12,6 +13,13 @@
 .carousel-item
   position: relative
 
+  &:after
+    content: ''
+    background: rgba(#000, 0.3)
+    +size(100%)
+    +position(absolute, 0 0 0 0)
+    z-index: 2
+
 
 
 .carousel-item__background
@@ -19,7 +27,16 @@
     &--video
       min-width: 100vw
       width: 100%
+      display: none
 
+      +media(min-width $screen-large)
+        display: block
+
+
+    &--image
+
+      +media(min-width $screen-large)
+        display: none !important
 
 
 .carousel-item__caption
@@ -28,7 +45,7 @@
   padding: 1rem
 
   +position(absolute, null null 10% null)
-  z-index: 1
+  z-index: 3
 
   +media(min-width $screen-medium)
     width: 50vw

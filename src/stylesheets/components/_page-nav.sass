@@ -3,17 +3,20 @@
   margin: 0
   counter-reset: nav-counter
 
-  +display(flex)
-  +justify-content(center)
   width: 100%
   text-transform: uppercase
 
+  +display(flex)
+  +justify-content(center)
+
+  +media(max-width $screen-medium)
+    flex-wrap: wrap
+
 
   dt
-    display: flex
-    align-items: center
-    max-width: 250px
-    /* padding: 1em */
+    text-align: center
+    width: 50%
+    padding: 1em
     +position(relative)
 
     &:before
@@ -22,7 +25,9 @@
 
       font-size: 22px
       font-weight: bold
-      margin: 0 0.5em
+
+      display: table
+      margin: 1em auto
       padding: 0 0.5em
 
     &:after
@@ -32,7 +37,7 @@
 
       display: block
       margin: auto
-      +position(absolute, null null 20px 15px)
+      +position(absolute, 4.25em 0 null)
       height: 5px
       width: 2rem
 
@@ -40,10 +45,31 @@
       background: $light-grey
 
 
+    +media(min-width $screen-medium)
+      text-align: left
+      max-width: 250px
+      +display(flex)
+      +align-items(center)
+
+      &:before
+        margin: 0 auto
+
+      &:after
+        +position(absolute, auto auto 2em 1.25em)
+
+    +media(min-width $screen-large)
+      &:first-child:after
+        left: 1.25em
+
+
+
   a
     color: lighten($dark-grey, 20%)
     font-family: $heading-font-family
-    font-size: 80%
+    font-size: 90%
     font-weight: bold
-    padding: 1rem
     text-decoration: none
+
+    padding: 0.5rem 0
+    +media(min-width $screen-small)
+      padding: 1.5rem 1rem
