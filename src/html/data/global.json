@@ -89,50 +89,53 @@
   },
   "socialLinks": [
     {
-      "id": "twitter",
-      "title": "Twitter",
-      "url": "https://twitter.com/rolaids"
-    },
-    {
       "id": "facebook",
       "title": "Facebook",
       "url": "https://www.facebook.com/rolaids"
     },
     {
-      "id": "instagram",
-      "title": "Instagram",
-      "url": "https://instagram.com/rolaids"
+      "id": "youtube",
+      "title": "YouTzube",
+      "url": "https://youtube.com/rolaids"
     }
   ],
   "footer": {
     "navList1": [
       {
-        "link": "#",
-        "label": "Link 1"
+        "link": "rolaids-advantage.html",
+        "label": "The Rolaids Advantage"
       },
       {
-        "link": "#",
-        "label": "Link 2"
+        "link": "coupon.html",
+        "label": "Coupons & Offers"
       }
     ],
     "navList2": [
       {
-        "link": "#",
-        "label": "Link 1"
+        "link": "heartburn.html",
+        "label": "Heartburn"
       },
       {
-        "link": "#",
-        "label": "Link 2"
+        "link": "indigestion.html",
+        "label": "Acid Indigestion"
       }
     ],
     "navList3": [
       {
-        "link": "#",
-        "label": "Link 1"
+        "link": "faq.html",
+        "label": "FAQ"
       },
       {
-        "link": "#",
-        "label": "Link 2"
+        "link": "contact.html",
+        "label": "Contact Us"
+      },
+      {
+        "link": "privacy.html",
+        "label": "Privacy Policy"
+      },
+      {
+        "link": "terms.html",
+        "label": "Terms Of Use"
       }
     ]
   },
@@ -148,9 +151,9 @@
             "src": "//lorempixel.com/1200/800"
           },
           "caption": {
-            "title": "Headline 1 Goes Here",
-            "text": "Consectetur eaque magni fuga modi harum quam sequi officiis explicabo asperiores libero. Ratione eligendi placeat.",
-            "buttonLink": "#",
+            "title": "Grab some friends!",
+            "text": "Rolaids<sup>&reg;</sup>. Because skipping on life is just… not gonna happen",
+            "buttonLink": "advanced-tablets.html",
             "buttonText": "Learn More"
           }
         },
@@ -163,9 +166,9 @@
             "src": "//lorempixel.com/1200/800"
           },
           "caption": {
-            "title": "Headline 2 Goes Here",
-            "text": "Consectetur eaque magni fuga modi harum quam sequi officiis explicabo asperiores libero. Ratione eligendi placeat.",
-            "buttonLink": "#",
+            "title": "Grab some food!",
+            "text": "Never let heartburn stand in the way of a good meal or a good time.",
+            "buttonLink": "rolaids-advantage.html",
             "buttonText": "Learn More"
           }
         }
@@ -176,7 +179,7 @@
       },
       "callout": {
         "first": {
-          "backgroundImage": "http://lorempixel.com/800/800/cats",
+          "backgroundImage": "images/rolaids-home-1.png",
           "title": "Kick Acid And Gas",
           "button1": {
             "text": "Learn More",
@@ -196,6 +199,68 @@
         }
       }
     },
+    "rolaidsAdvantage": {
+      "hero": {
+        "backgroundImage": {
+          "src": "images/Rolaids-heartburn-hero.jpg"
+        },
+        "caption": {
+          "title": "Roalaids&reg; Advantage",
+          "text": "That burning sensation in your throat caused by stomach acid backing up into your esophagus. Ouch."
+        }
+      },
+      "sections": [
+        {
+          "id": "tablets",
+          "class": "section-triangle",
+          "nav": {
+            "link": "#tablets",
+            "label": "Tablets"
+          },
+          "content": {
+            "title": "Rolaids&reg; Advantage",
+            "subtitle": "Tablets",
+            "text": "Take multi-symptom relief to the next level. Rolaids&reg;  Advanced goes to work on your worst heartburn, bloating and gas. (Unlike Tums<sup>&reg;</sup>)",
+            "image": {
+              "src": "images/Rolaids-heartburn-1.jpg"
+            }
+          }
+        },
+        {
+          "id": "tablets",
+          "class": "section-display",
+          "content": {
+            "title": "Ingredients Advantage",
+            "subtitle": "Tablets",
+            "text": "Rolaids® features two antacid ingredients, calcium carbonate and magnesium hydroxide. Tums® and many other antacid products only contain one.",
+            "image": {
+              "src": "images/Rolaids-heartburn-2.png"
+            }
+          }
+        },
+        {
+          "class": "section-default",
+          "nav": {
+            "link": "#what-triggers-heartburn",
+            "label": "What triggers Heartburn?"
+          },
+          "content": {
+            "title": "More Symptoms",
+            "subtitle": "Symptoms",
+            "text": "Fuck yeah text",
+            "image": {
+              "src": "images/Rolaids-heartburn-3.jpg"
+            }
+          }
+        },
+        {
+          "nav": {
+            "link": "#what-prevents-heartburn",
+            "label": "What can I do to help prevent Heartburn?"
+          }
+        }
+      ]
+    },
     "advancedTablets": {
       "hero": {
         "backgroundImage": {
@@ -207,10 +272,10 @@
         },
         "product": {
           "large": {
-            "src": "//placehold.it/350/f0f0f0"
+            "src": "images/Rolaids_advanced-tablet.png"
           },
           "small": {
-            "src": "//placehold.it/300x100/cfcfcf"
+            "src": "images/Rolaids_advanced-roll.png"
           }
         }
       },
@@ -221,11 +286,11 @@
         },
         {
           "buttonText": "Product Details",
-          "content": "<p>USES: Relieves: Heartburn, Sour stomach, Acid indigestion, Upset stomach associated with these symptoms, Pressure and bloating commonly referred to as gas.</p> <p>WARNINGS: Ask a doctor or pharmacist before use if you are now taking a prescription drug. Antacids may interact with certain prescription drugs. When using this product: do not take more than 7 tablets in a 24-hour period, do not use the maximum dosage for more than 2 weeks. Stop use and ask doctor if symptoms last more than 2 weeks. Keep out of reach of children.</p> <p>DIRECTIONS: Chew 2-3 tablets as symptoms occur, or as directed by a doctor.  </p> <p>OTHER INFORMATION: Each tablet contains: calcium 400 mg, magnesium 85 mg</p>"
+          "content": "<p><h3>USES:</h3> <b>Relieves:</b> <ul><li>Heartburn</li> <li>Sour stomach</li> <li>Acid indigestion</li> <li>Upset stomach associated with these symptoms</li> <li>Pressure and bloating commonly referred to as gas.</li></ul></p> <h3>WARNINGS:</h3> <p>Ask a doctor or pharmacist before use if you are now taking a prescription drug. Antacids may interact with certain prescription drugs. When using this product: do not take more than 7 tablets in a 24-hour period, do not use the maximum dosage for more than 2 weeks. Stop use and ask doctor if symptoms last more than 2 weeks. Keep out of reach of children.</p> <h3>DIRECTIONS:</h3> <p>Chew 2-3 tablets as symptoms occur, or as directed by a doctor.  </p> <h3>OTHER INFORMATION:</h3> <p>Each tablet contains: calcium 400 mg, magnesium 85 mg</p>"
         },
         {
-          "buttonText": "Tab Item 3",
-          "content": "Skateboard raw denim authentic cray, etsy you probably haven't heard of them aesthetic austin narwhal gentrify. Tofu vice twee celiac plaid raw denim. Drinking vinegar mixtape beard yuccie green juice YOLO. Freegan neutra asymmetrical mumblecore distillery. Umami raw denim twee man braid. Photo booth skateboard single-origin coffee, pinterest kogi lo-fi literally health goth PBR&B. Kombucha freegan dreamcatcher, biodiesel whatever put a bird on it PBR&B irony pop-up farm-to-table YOLO meh heirloom pabst wayfarers."
+          "buttonText": "Ingredients",
+          "content": "<h3>ACTIVE INGREDIENTS <small>(in each tablet):</small></h3> <p><ul><li>Calcium carbonate USP 1000 mg-antacid</li> <li>Magnesium Hydroxide USP 200 mg-antacid</li> <li>Simethicone USP 40 mg-antacid</li></ul> <h3>INACTIVE INGREDIENTS:</h3> <ul><li>blue 1 lake</li> <li>blue 2 lake</li> <li>dextrose</li> <li>magnesium stearate</li> <li>maltodextrin</li> <li>natural and artificial flavors</li> <li>red 40 lake</li> <li>silicon dioxide</li> <li>stearic acid</li> <li>sucrose (333-032)</li></ul>"
         }
       ]
     },
@@ -240,10 +305,76 @@
         },
         "product": {
           "large": {
-            "src": "//placehold.it/350/f0f0f0"
+            "src": "images/Rolaids_regular-tablet.png"
           },
           "small": {
-            "src": "//placehold.it/300x100/cfcfcf"
+            "src": "images/Rolaids_regular-roll.png"
+          }
+        }
+      },
+      "tabs": [
+        {
+          "buttonText": "Tab Item 1",
+          "content": "Meggings meh chillwave, chia intelligentsia lomo ethical gentrify blue bottle photo booth beard authentic gluten-free. Hashtag tousled jean shorts blog microdosing, paleo taxidermy kale chips deep v chicharrones plaid roof party listicle. Fingerstache authentic XOXO direct trade literally. Cardigan green juice tacos chia twee. Blog kombucha organic, tote bag listicle celiac marfa raw denim hella next level ennui. Before they sold out single-origin coffee brooklyn, twee 3 wolf moon tousled banjo cred. Biodiesel next level trust fund cray, fashion axe paleo butcher flannel twee gluten-free franzen."
+        },
+        {
+          "buttonText": "Tab Item 2",
+          "content": "Semiotics literally selfies authentic truffaut, waistcoat biodiesel flexitarian brooklyn keffiyeh vegan kale chips chia kinfolk. Chambray everyday carry vegan whatever, neutra readymade schlitz. Wayfarers 3 wolf moon meh, blog williamsburg chicharrones whatever. Direct trade man braid try-hard, salvia 3 wolf moon cold-pressed migas lomo keffiyeh pour-over messenger bag occupy ennui biodiesel actually. Forage tousled disrupt slow-carb, fap echo park green juice. Mlkshk venmo retro wolf austin ramps. Actually kale chips forage, DIY slow-carb chicharrones ugh skateboard pour-over."
+        },
+        {
+          "buttonText": "Tab Item 3",
+          "content": "Skateboard raw denim authentic cray, etsy you probably haven't heard of them aesthetic austin narwhal gentrify. Tofu vice twee celiac plaid raw denim. Drinking vinegar mixtape beard yuccie green juice YOLO. Freegan neutra asymmetrical mumblecore distillery. Umami raw denim twee man braid. Photo booth skateboard single-origin coffee, pinterest kogi lo-fi literally health goth PBR&B. Kombucha freegan dreamcatcher, biodiesel whatever put a bird on it PBR&B irony pop-up farm-to-table YOLO meh heirloom pabst wayfarers."
+        }
+      ]
+    },
+    "ultimateTablets": {
+      "hero": {
+        "backgroundImage": {
+          "src": "//placehold.it/1200x800"
+        },
+        "caption": {
+          "title": "Rolaids<br>Ultimate&reg; Tablets",
+          "text": "It kicks acid and a whole lot more"
+        },
+        "product": {
+          "large": {
+            "src": "images/Rolaids_ultimate-tablet.png"
+          },
+          "small": {
+            "src": "images/Rolaids_ultimate-roll.png"
+          }
+        }
+      },
+      "tabs": [
+        {
+          "buttonText": "Tab Item 1",
+          "content": "Meggings meh chillwave, chia intelligentsia lomo ethical gentrify blue bottle photo booth beard authentic gluten-free. Hashtag tousled jean shorts blog microdosing, paleo taxidermy kale chips deep v chicharrones plaid roof party listicle. Fingerstache authentic XOXO direct trade literally. Cardigan green juice tacos chia twee. Blog kombucha organic, tote bag listicle celiac marfa raw denim hella next level ennui. Before they sold out single-origin coffee brooklyn, twee 3 wolf moon tousled banjo cred. Biodiesel next level trust fund cray, fashion axe paleo butcher flannel twee gluten-free franzen."
+        },
+        {
+          "buttonText": "Tab Item 2",
+          "content": "Semiotics literally selfies authentic truffaut, waistcoat biodiesel flexitarian brooklyn keffiyeh vegan kale chips chia kinfolk. Chambray everyday carry vegan whatever, neutra readymade schlitz. Wayfarers 3 wolf moon meh, blog williamsburg chicharrones whatever. Direct trade man braid try-hard, salvia 3 wolf moon cold-pressed migas lomo keffiyeh pour-over messenger bag occupy ennui biodiesel actually. Forage tousled disrupt slow-carb, fap echo park green juice. Mlkshk venmo retro wolf austin ramps. Actually kale chips forage, DIY slow-carb chicharrones ugh skateboard pour-over."
+        },
+        {
+          "buttonText": "Tab Item 3",
+          "content": "Skateboard raw denim authentic cray, etsy you probably haven't heard of them aesthetic austin narwhal gentrify. Tofu vice twee celiac plaid raw denim. Drinking vinegar mixtape beard yuccie green juice YOLO. Freegan neutra asymmetrical mumblecore distillery. Umami raw denim twee man braid. Photo booth skateboard single-origin coffee, pinterest kogi lo-fi literally health goth PBR&B. Kombucha freegan dreamcatcher, biodiesel whatever put a bird on it PBR&B irony pop-up farm-to-table YOLO meh heirloom pabst wayfarers."
+        }
+      ]
+    },
+    "ultimateTablets": {
+      "hero": {
+        "backgroundImage": {
+          "src": "//placehold.it/1200x800"
+        },
+        "caption": {
+          "title": "Rolaids<br>Extra Strength&reg; Tablets",
+          "text": "It kicks acid and a whole lot more"
+        },
+        "product": {
+          "large": {
+            "src": "images/Rolaids_extra-tablet.png"
+          },
+          "small": {
+            "src": "images/Rolaids_extra-roll.png"
           }
         }
       },
@@ -497,6 +628,22 @@
           "title": "Where to Buy"
         }
       }
+    },
+    "faq": {
+      "hero": {
+        "backgroundImage": {
+          "src": "http://placehold.it/1200x800"
+        },
+        "caption": {
+          "title": "Frequently Asked Questions"
+        }
+      },
+      "questions": [
+        {
+          "question": "What is heartburn?",
+          "answer": "Heartburn is a burning discomfort in the mid-chest due to stomach acid irritating the sensitive lining of the esophagus."
+        }
+      ]
     }
   }
 }

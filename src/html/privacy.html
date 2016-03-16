@@ -1,0 +1,28 @@
+{% extends 'layouts/application.html' %}
+
+{% set pageClass = "privacy" %}
+{% set pageController = "privacy" %}
+{% set pageAction = "show" %}
+
+{% block hero %}
+<section class="hero" style="background-image: url({{ page.privacy.hero.backgroundImage.src }})">
+  <div class="container">
+    <div class="hero-caption">
+      <h1 class="hero-caption__title">
+        {{ page.privacy.hero.caption.title }}
+      </h1>
+      <p class="hero-caption__text">
+        {{ page.privacy.hero.caption.text }}
+      </p>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block content %}
+<main class="content">
+  <div class="container">
+    {{ page.privacy.content }}
+  </div>
+</main>
+{% endblock %}

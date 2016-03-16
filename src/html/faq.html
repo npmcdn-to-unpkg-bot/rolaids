@@ -1,0 +1,33 @@
+{% extends 'layouts/application.html' %}
+
+{% set pageClass = "faq" %}
+{% set pageController = "faq" %}
+{% set pageAction = "show" %}
+
+{% block hero %}
+<section class="hero" style="background-image: url({{ page.faq.hero.backgroundImage.src }})">
+  <div class="container">
+    <div class="hero-caption">
+      <h1 class="hero-caption__title">
+        {{ page.faq.hero.caption.title }}
+      </h1>
+      <p class="hero-caption__text">
+        {{ page.faq.hero.caption.text }}
+      </p>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block content %}
+<main class="content">
+  <div class="container">
+    <div class="accordion">
+      {% for item in page.faq.questions %}
+        <a class="accordion-toggle" href="javascript:;">{{ item.question }}</a>
+        <div class="accordion-content">{{ item.answer }}</div>
+      {% endfor %}
+    </div>
+  </div>
+</main>
+{% endblock %}

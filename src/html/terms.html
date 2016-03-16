@@ -1,0 +1,25 @@
+{% extends 'layouts/application.html' %}
+
+{% set pageClass = "terms" %}
+{% set pageController = "terms" %}
+{% set pageAction = "show" %}
+
+{% block hero %}
+<section class="hero" style="background-image: url({{ page.terms.hero.backgroundImage.src }})">
+  <div class="container">
+    <div class="hero-caption">
+      <h1 class="hero-caption__title">
+        {{ page.terms.hero.caption.title }}
+      </h1>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block content %}
+<main class="content">
+  <div class="container">
+    {{ page.terms.content }}
+  </div>
+</main>
+{% endblock %}

@@ -30,9 +30,11 @@
 <main class="content">
   <div class="container">
     <ul class="accordion-tabs">
+      {% set count = 0 %}      
       {% for tab in page.advancedTablets.tabs %}
+      {% set count = count + 1 %} 
       <li class="tab">
-        <a href="javascript:void(0)" class="{% if tabs.index == 1 %} is-active {% endif %} tab-link button">{{ tab.buttonText }}</a>
+        <a href="javascript:void(0)" class="{% if count == 1 %} is-active {% endif %} tab-link button">{{ tab.buttonText }}</a>
         <div class="tab-content">
           <p>{{ tab.content }}</p>
         </div>

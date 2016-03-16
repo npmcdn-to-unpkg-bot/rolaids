@@ -77,6 +77,9 @@ const ROLAIDS = {
       accordionTabs('.accordion-tabs')
       navToggle('#app_nav', '.nav-toggle')
     },
+    show: function() {
+
+    }
   },
 
   home: {
