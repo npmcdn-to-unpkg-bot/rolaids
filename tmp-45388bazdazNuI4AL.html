@@ -38,8 +38,10 @@
 
 
   
+  <link rel="stylesheet" href="https://npmcdn.com/flickity@1.1/dist/flickity.min.css">
+
 </head>
-<body class="coupon" data-controller="" data-action="">
+<body class="home" data-controller="home" data-action="show">
 
   <header class="header">
   <div class="container">
@@ -48,7 +50,7 @@
       <div class="row">
         <!-- Brand -->
         <div class="brand">
-          <a href="/" class="brand__link">
+          <a href="index.html" class="brand__link">
             <img src="images/Rolaids-logo-415x114-a0f7525011.png" alt="Rolaids&reg;" class="brand__image img-responsive">
           </a>
         </div>
@@ -232,23 +234,56 @@
 
 
   
-<section class="hero" style="background-image: url(//placehold.it/1200x800)">
-    <div class="container">
-      <div class="hero-caption">
-        <h1 class="hero-caption__title">Contact Us</h1>
+<section class="carousel">
+  <div class="carousel-inner flickity">
+    
+    <div class="carousel-item">
+      <img class="carousel-item__background carousel-item__background--image" src="//lorempixel.com/1200/800" alt="Rolaids Image Alt">
+      <video class="carousel-item__background carousel-item__background--video" src="https://player.vimeo.com/external/158368523.hd.mp4?s=be05de7e132c1645ef39aa9baccef32258d747f2&profile_id=113" autoplay loop muted>
+        <source src="" />
+      </video>
+      <div class="carousel-item__caption">
+        <h2 class="carousel-item__caption-title">Grab some friends!</h2>
+        <p class="carousel-item__caption-text">Rolaids<sup>&reg;</sup>. Because skipping on life is just… not gonna happen</p>
+        <a class="carousel-item__caption-button button button--large" href="advanced-tablets.html">Learn More</a>
       </div>
     </div>
-  </section>
+    
+    <div class="carousel-item">
+      <img class="carousel-item__background carousel-item__background--image" src="//lorempixel.com/1200/800" alt="Rolaids Image Alt">
+      <video class="carousel-item__background carousel-item__background--video" src="https://player.vimeo.com/external/158388872.hd.mp4?s=4b0cb2dd121e0bb98f2bbe63ffb3ac95061a2eef&profile_id=119" autoplay loop muted>
+        <source src="" />
+      </video>
+      <div class="carousel-item__caption">
+        <h2 class="carousel-item__caption-title">Grab some food!</h2>
+        <p class="carousel-item__caption-text">Never let heartburn stand in the way of a good meal or a good time.</p>
+        <a class="carousel-item__caption-button button button--large" href="rolaids-advantage.html">Learn More</a>
+      </div>
+    </div>
+    
+  </div>
+</section>
 
 
   
 <main class="content">
-  <div class="container">
-    <h1>Save $1.00 on Rolaids&reg;</h1>
-    <p></p>
-    <p><a class="button primary" href="">Download Coupon</a></p>
-    <img src="//placehold.it/500x500/ffffff" alt="Image Alt">
+  <div class="coupon-bar">
+    <a href="coupon.html" class="coupon-bar__link">Save <span><sup>$</sup>1.00</span> on any Rolaids product</a>
   </div>
+
+  <section class="callout">
+    <div class="callout-block callout-block--first" style="background-image: url(images/rolaids-home-1-c0d14992ea.png)">
+      <h3 class="callout-block__title">Kick Acid And Gas</h3>
+      <a class="callout-block__button button button--primary" href="rolaids-advantage.html">Learn More</a>
+      <a class="callout-block__button button" href="javascript:;" data-video="video.mp4">Watch The Video</a>
+    </div>
+    <div class="callout-block callout-block--last" style="background-image: url(http://lorempixel.com/800/800/cats)">
+      <p class="callout-block__text">
+        Rolaids Regular Strength Tablets <span class="text-emphasis--secondary">Neutralize 44% More Acid</span> Than Tums Regular
+      </p>
+      <a class="callout-block__button button button--secondary" href="rolaids-advantage.html">Find Out How</a>
+    </div>
+  </section>
 </main>
 
 
@@ -311,5 +346,7 @@
   <script src="javascripts/shared-287fd3cc43497137f71d.js"></script>
   <script src="javascripts/app-287fd3cc43497137f71d.js"></script>
   
+  <script src="https://npmcdn.com/flickity@1.1/dist/flickity.pkgd.min.js"></script>
+
 </body>
 </html>
