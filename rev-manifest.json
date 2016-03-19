@@ -14,6 +14,14 @@
   "fonts/icons.ttf": "fonts/icons-9ae4b92853.ttf",
   "fonts/icons.woff": "fonts/icons-f8cee99904.woff",
   "fonts/icons.woff2": "fonts/icons-312c175cd2.woff2",
+  "images/Rolaids-advantage-body.png": "images/Rolaids-advantage-body-9513038d85.png",
+  "images/Rolaids-advantage-calcium.png": "images/Rolaids-advantage-calcium-c402eed56b.png",
+  "images/Rolaids-advantage-clock.png": "images/Rolaids-advantage-clock-c5b1de8218.png",
+  "images/Rolaids-advantage-hero.jpg": "images/Rolaids-advantage-hero-bc9b9a9b07.jpg",
+  "images/Rolaids-advantage-tablets-advanced.png": "images/Rolaids-advantage-tablets-advanced-df92cd7481.png",
+  "images/Rolaids-advantage-tablets-life.png": "images/Rolaids-advantage-tablets-life-ed3c1fc464.png",
+  "images/Rolaids-advantage-vstums.png": "images/Rolaids-advantage-vstums-9e49ac12b2.png",
+  "images/Rolaids-coupon-products.png": "images/Rolaids-coupon-products-dad81febc4.png",
   "images/Rolaids-gas-1.jpg": "images/Rolaids-gas-1-2ad1b22175.jpg",
   "images/Rolaids-gas-2.jpg": "images/Rolaids-gas-2-564b8ca803.jpg",
   "images/Rolaids-gas-3.jpg": "images/Rolaids-gas-3-9edf876d88.jpg",
@@ -48,7 +56,10 @@
   "images/Rolaids_extra-tablet.png": "images/Rolaids_extra-tablet-3d098ea4a4.png",
   "images/Rolaids_regular-roll.png": "images/Rolaids_regular-roll-86d8786885.png",
   "images/Rolaids_regular-tablet.png": "images/Rolaids_regular-tablet-9e1cd4db3e.png",
+  "images/Rolaids_ultra-liquid-cherry.png": "images/Rolaids_ultra-liquid-cherry-d80c8f9488.png",
+  "images/Rolaids_ultra-liquid-mint.png": "images/Rolaids_ultra-liquid-mint-ddd81523db.png",
   "images/Rolaids_ultra-roll.png": "images/Rolaids_ultra-roll-87cbf20d83.png",
+  "images/Rolaids_ultra-softchew-strawberry.png": "images/Rolaids_ultra-softchew-strawberry-f9e5145ef7.png",
   "images/Rolaids_ultra-tablet.png": "images/Rolaids_ultra-tablet-9d2e7cce4a.png",
   "images/Sanofi-logo-135x30.png": "images/Sanofi-logo-135x30-1a356b7512.png",
   "images/logo_chattem.png": "images/logo_chattem-63c0025c4b.png",
@@ -57,5 +68,5 @@
   "images/sprites.svg": "images/sprites-0325b3f89a.svg",
   "javascripts/app.js": "javascripts/app-7c6f7230e65a2d0fde5b.js",
   "javascripts/shared.js": "javascripts/shared-7c6f7230e65a2d0fde5b.js",
-  "stylesheets/global.css": "stylesheets/global-8b1bcf1793.css"
+  "stylesheets/global.css": "stylesheets/global-9faeb57f6f.css"
 }
