@@ -5,9 +5,17 @@ body.coupon
     background-color: $color-secondary-light
 
 
-    > .container
-      columns: 2 500px
+  .content__block
+    +media(min-width $screen-medium)
+      +span-columns(6)
 
+
+    h1
+      color: $color-secondary
+      text-transform: uppercase
+
+      +media(min-width $screen-medium)
+        font-size: modular-scale(5)
 
     img
       display: block

@@ -6,7 +6,7 @@
 <section class="hero" style="background-image: url({{ page.coupon.hero.backgroundImage.src }})">
     <div class="container">
       <div class="hero-caption">
-        <h1 class="hero-caption__title">Contact Us</h1>
+        <h1 class="hero-caption__title">{{ page.coupon.hero.caption.title }}</h1>
       </div>
     </div>
   </section>
@@ -15,10 +15,14 @@
 {% block content %}
 <main class="content">
   <div class="container">
-    <h1>{{ page.coupon.content.title }}</h1>
-    <p>{{ page.coupon.content.text }}</p>
-    <p><a class="button primary" href="{{ page.coupon.content.button.link }}">{{ page.coupon.content.button.text }}</a></p>
-    <img src="{{ page.coupon.content.image.src }}" alt="{{ page.coupon.content.image.alt }}">
+    <div class="content__block">
+      <h1>{{ page.coupon.content.title }}</h1>
+      <p>{{ page.coupon.content.text }}</p>
+      <p class="align--center"><a class="button button--primary button--large" href="{{ page.coupon.content.button.link }}">{{ page.coupon.content.button.text }}</a></p>
+    </div>
+    <div class="content__block">
+      <img src="{{ page.coupon.content.image.src }}" alt="{{ page.coupon.content.image.alt }}">
+    </div>
   </div>
 </main>
 {% endblock %}

@@ -7,7 +7,7 @@ import exclaimify from './exclaimify'
 //
 function accordionTabs(target) {
  $(target).each(function(index) {
-    $(this).children('li').first().children('a').addClass('is-active').next().addClass('is-open').show()
+    $(this).children('li').first().next().children('a').addClass('is-active').next().addClass('is-open').show()
   })
   $(target).on('click', 'li > a.tab-link', function(event) {
     event.preventDefault()
@@ -58,7 +58,7 @@ const navToggle = function(target, toggleBtn) {
 // Video Modal
 //
 const videoModal = function() {
-  var $videoBtn = $('[data-video]'),
+  let $videoBtn = $('[data-video]'),
       $videoSrc = $videoBtn.attr('data-video')
 
   $videoBtn.click(function() {
@@ -66,6 +66,17 @@ const videoModal = function() {
   })
 }
 
+//
+// Active Page Link
+//
+// Make sure the current page is marked
+const activePageLink = function(target) {
+  $(target).each(function() {
+    if (window.location.pathname.split('/')[1] == $(this).children('a').attr('href')) {
+      $(this).addClass("is-active")
+    }
+  })
+}
 
 
 //
@@ -76,9 +87,15 @@ const ROLAIDS = {
     init: function() {
       accordionTabs('.accordion-tabs')
       navToggle('#app_nav', '.nav-toggle')
+      activePageLink('.nav__list-item')
+
+      $('.nav-dropdown__subtitle').click(function() {
+        console.log('test')
+        $('.nav-dropdown__submenu').removeClass('is-active')
+        $(this).parent('.nav-dropdown__submenu').addClass('is-active')
+      })
     },
     show: function() {
-
     }
   },
 
@@ -89,7 +106,9 @@ const ROLAIDS = {
 
     show: function() {
       // Prevent video loading before carousel is done
-      var $gallery = $('.flickity').flickity();
+      var $gallery = $('.flickity').flickity({
+        autoPlay: 5000
+      });
 
       function onLoadeddata( event ) {
         var cell = $gallery.flickity( 'getParentCell', event.target );

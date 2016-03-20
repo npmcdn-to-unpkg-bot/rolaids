@@ -3,10 +3,41 @@
 
   &-content
     +row
+    +display(flex)
+    +media(max-width $screen-medium)
+      flex-direction: column
 
     &__column
-      +media($screen-medium)
-        +span-columns(6)
+      +position(relative)
+      +media(min-width $screen-medium)
+        width: 50%
+
+
+.section:not(.section-display)
+  overflow: hidden
+
+
+.section-triangle--reverse
+  background: $color-secondary-light
+
+
+  .section-content__column
+    &:first-child
+      order: 1
+
+      +position(relative)
+      &:after
+        content: ''
+
+        border-right: 400px solid rgba($color-secondary, 0.6)
+        border-left: 400px solid transparent
+        border-top: 400px solid transparent
+        +position(absolute, null 0 0 null)
+
+    &:last-child
+      order: 0
+      &:after
+        content: none !important
 
 
 
@@ -27,20 +58,31 @@
 
   &__title
     letter-spacing: 0.06em
+    margin-bottom: 0
     +media(min-width $screen-medium)
       font-size: modular-scale(3)
     +media(min-width $screen-large)
       font-size: modular-scale(4)
 
 
+.section-image
+  background-size: cover
+  background-position: center
+  min-height: 450px
+  width: 100%
+  +media(min-width $screen-medium)
+    +size(100%)
+    +position(absolute)
+
+
 
 .section-content__text
   color: $dark-grey
-  font-weight: bold
-  padding: 1rem
+  // font-weight: bold
+  padding: 0 1em
 
   +media(min-width $screen-medium)
-    padding: 1rem 3rem
+    padding: 1em 3em
 
 
 
@@ -72,8 +114,10 @@
       /* padding: 1rem 0 */
 
   .section-image
-    +position(relative)
-    z-index: 1
+    +media(min-width $screen-medium)
+      +position(absolute)
+      z-index: 1
+
 
 
   .section-header
@@ -89,26 +133,42 @@
     &:before
       content: ''
       background: $color-secondary
-      width: 105%
-      height: 100%
-      +position(absolute, 0 null null -105%)
+      +size(100%)
+      +position(absolute, 0 null null -74.5%)
       z-index: -1
+      +media(min-width $screen-large)
+        +position(absolute, 0 null null -100%)
 
 
   .section-header__subtitle
     color: $white
 
+  
+  .section-content__column
 
-  .section-content__column:first-child
+    &:first-child
+        overflow: hidden
+
+    +media(min-width $screen-medium max-width $screen-large)
+      &:first-child
+        +span-columns(5)
+      &:last-child
+        +span-columns(7)
+
+
+  .section-content
     +position(relative)
 
-    &:after
-      content: ''
-      background: $color-primary
+    +media(min-width $screen-medium)
+      &:after
+        content: ''
+        background: $color-primary
 
-      display: block
-      height: 2px
-      width: 400px
+        display: block
+        height: 2px
+        width: 400px
 
-      transform: rotate(-45deg)
-      +position(absolute,  null -100px 100px null)
+        transform: rotate(-45deg)
+        +position(absolute,  null null 100px 10%)
+        +media(min-width $screen-large)
+          +position(absolute,  null null 100px 30%)

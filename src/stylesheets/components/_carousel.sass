@@ -1,17 +1,21 @@
 .carousel
   color: $carousel-default-color
-  position: relative
-
 
 
 
 .carousel-inner
   width: 100%
+  position: relative
 
 
 
 .carousel-item
+  background-color: $light-grey
   position: relative
+  left: 0 !important;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: -1;
 
   &:after
     content: ''
@@ -19,6 +23,10 @@
     +size(100%)
     +position(absolute, 0 0 0 0)
     z-index: 2
+
+  &.is-selected 
+    opacity: 1
+    z-index: 0
 
 
 
@@ -39,18 +47,32 @@
         display: none !important
 
 
+
 .carousel-item__caption
   display: table
   margin: auto
   padding: 1rem
 
-  +position(absolute, null null 10% null)
+  +position(absolute, null 0 1% 0)
   z-index: 3
 
   +media(min-width $screen-medium)
+    text-align: center
     width: 50vw
     max-width: 600px
-    left: 10%
+    bottom: 30%
+
+
+  &-title,
+  &-text,
+  &-button
+    transition: all 0.44s ease-in
+    transform: translateY(40%)
+    opacity: 0
+    .carousel-item.is-selected &
+      transform: translateY(0)
+      opacity: 1
+
 
 
   &-title,
@@ -62,6 +84,11 @@
     text-transform: uppercase
   &-text
     margin-bottom: 2em
+
+
+
+.flickity-slider
+  transform: none !important
 
 
 

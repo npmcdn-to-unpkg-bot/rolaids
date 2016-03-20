@@ -1,20 +1,38 @@
-<nav id="app_nav" class="nav--primary">
+<nav id="app_nav" class="nav nav--primary">
     <ul class="nav__list">
         {% for item in nav.primary %}
         <li class="nav__list-item">
-          <a class="nav__list-link {% if item.dropdownMenu %} has-dropdown {% endif %}" href="{{ item.url }}">
+            <a class="nav__list-link {% if item.dropdownMenu %} has-dropdown {% endif %}" href="{{ item.url }}">
                 {{ item.label }}
             </a>
             {% if item.dropdownMenu %}
               <div class="nav-dropdown">
                 <ul class="nav-dropdown__list">
+                {% set count = 0 %}
                 {% for item in item.dropdownMenu %}
-                  <li class="nav-dropdown__list-item">
-                    <a class="nav-dropdown__list-link" href="{{ item.url }}">
-                      <img class="nav-dropdown__list-image" src="{{ item.image.src }}" alt="">
-                    </a>
-                    <a class="nav-dropdown__list-link" href="{{ item.url }}">{{ item.label }}</a>
-                  </li>
+                    {% set count = count + 1 %}
+                    {% if item.category %}
+                        <li class="nav-dropdown__submenu {% if count == 1 %} is-active {% endif %}">
+                            <a class="nav-dropdown__subtitle" href="javascript:void(0);">{{ item.category }}</a>
+                            <ul class="nav-dropdown__submenu-list">
+                                {% for product in item.menu %}
+                                <li class="nav-dropdown__list-item">
+                                    <a class="nav-dropdown__list-link" href="{{ product.url }}">
+                                        <img class="nav-dropdown__list-image" src="{{ product.image.src }}" alt="">
+                                    </a>
+                                    <a class="nav-dropdown__list-link" href="{{ product.url }}">{{ product.label }}</a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </li> 
+                    {% else %}
+                        <li class="nav-dropdown__list-item">
+                            <a class="nav-dropdown__list-link" href="{{ item.url }}">
+                                <img class="nav-dropdown__list-image" src="{{ item.image.src }}" alt="">
+                            </a>
+                            <a class="nav-dropdown__list-link" href="{{ item.url }}">{{ item.label }}</a>
+                        </li>
+                    {% endif %}
                 {% endfor %}
                 </ul>
               </div>

@@ -11,32 +11,49 @@
         "url": "#products",
         "dropdownMenu": [
           {
-            "label": "Advanced Tablets",
-            "url": "advanced-tablets.html",
-            "image": {
-              "src": "images/Rolaids-products-drop-adv.png"
-            }
+            "category": "tablets",
+            "menu": [
+              {
+                "label": "Advanced Tablets",
+                "url": "advanced-tablets.html",
+                "image": {
+                  "src": "images/Rolaids-products-drop-adv.png"
+                }
+              },
+              {
+                "label": "Regular Tablets",
+                "url": "regular-tablets.html",
+                "image": {
+                  "src": "images/Rolaids-products-drop-reg.png"
+                }
+              },
+              {
+                "label": "Ultimate Tablets",
+                "url": "ultimate-tablets.html",
+                "image": {
+                  "src": "images/Rolaids-products-drop-ult.png"
+                }
+              },
+              {
+                "label": "Extra Strength Tablets",
+                "url": "extra-strength-tablets.html",
+                "image": {
+                  "src": "images/Rolaids-products-drop-xtra.png"
+                }
+              }
+            ]
           },
           {
-            "label": "Regular Tablets",
-            "url": "regular-tablets.html",
-            "image": {
-              "src": "images/Rolaids-products-drop-reg.png"
-            }
-          },
-          {
-            "label": "Ultimate Tablets",
-            "url": "ultimate-tablets.html",
-            "image": {
-              "src": "images/Rolaids-products-drop-ult.png"
-            }
-          },
-          {
-            "label": "Extra Strength Tablets",
-            "url": "extra-strength-tablets.html",
-            "image": {
-              "src": "images/Rolaids-products-drop-xtra.png"
-            }
+            "category": "softchews",
+            "menu": [
+              {
+                "label": "Ultimate Softchew - Strawberry",
+                "url": "#softchew",
+                "image": {
+                  "src": "images/Rolaids_ultra-softchew-strawberry.png"
+                }
+              }
+            ]
           }
         ]
       },
@@ -171,6 +188,21 @@
             "buttonLink": "rolaids-advantage.html",
             "buttonText": "Learn More"
           }
+        },
+        {
+          "video": {
+            "src": "https://player.vimeo.com/external/158388982.hd.mp4?s=be0cd30e4b5b132f9b1d03ac457fcc93e4e3a766&profile_id=119"
+          },
+          "image": {
+            "alt": "Rolaids Image Alt",
+            "src": "//lorempixel.com/1200/800"
+          },
+          "caption": {
+            "title": "Grab the Rolaids and go!",
+            "text": "Stay on the go wherever you go with Rolaids<sup>&reg;</sup>.",
+            "buttonLink": "rolaids-advantage.html",
+            "buttonText": "Learn More"
+          }
         }
       ],
       "coupon": {
@@ -202,7 +234,7 @@
     "rolaidsAdvantage": {
       "hero": {
         "backgroundImage": {
-          "src": "images/Rolaids-heartburn-hero.jpg"
+          "src": "images/Rolaids-advantage-hero.jpg"
         },
         "caption": {
           "title": "Roalaids&reg; Advantage",
@@ -214,49 +246,51 @@
           "id": "tablets",
           "class": "section-triangle",
           "nav": {
+            "num": "01",
             "link": "#tablets",
             "label": "Tablets"
           },
           "content": {
-            "title": "Rolaids&reg; Advantage",
-            "subtitle": "Tablets",
-            "text": "Take multi-symptom relief to the next level. Rolaids&reg;  Advanced goes to work on your worst heartburn, bloating and gas. (Unlike Tums<sup>&reg;</sup>)",
-            "image": {
-              "src": "images/Rolaids-heartburn-1.jpg"
+            "first": {
+              "title": "Rolaids&reg; Advantage",
+              "subtitle": "Tablets",
+              "text": "<p>Take multi-symptom relief to the next level. Rolaids&reg;  Advanced goes to work on your worst heartburn, bloating and gas. (Unlike Tums<sup>&reg;</sup>)</p><br><center><a class=\"button button--primary button--large align--center \" href=\"heartburn.html\">Learn More</a></center>"
+            },
+            "last": {
+              "image": {
+                "src": "images/Rolaids-advantage-tablets-advanced.png"
+              }
             }
           }
         },
         {
-          "id": "tablets",
           "class": "section-display",
           "content": {
-            "title": "Ingredients Advantage",
-            "subtitle": "Tablets",
-            "text": "Rolaids® features two antacid ingredients, calcium carbonate and magnesium hydroxide. Tums® and many other antacid products only contain one.",
-            "image": {
-              "src": "images/Rolaids-heartburn-2.png"
+            "first": {
+              "image": {
+                "src": "images/Rolaids-advantage-calcium.png"
+              }
+            },
+            "last": {
+              "title": "Ingredients Advantage",
+              "subtitle": "Tablets",
+              "text": "<p>Calcium & Magnesium. Rolaids® features two antacid ingredients, calcium carbonate and magnesium hydroxide. Tums® and many other antacid products only contain one.</p>"
             }
           }
         },
         {
           "class": "section-default",
-          "nav": {
-            "link": "#what-triggers-heartburn",
-            "label": "What triggers Heartburn?"
-          },
           "content": {
-            "title": "More Symptoms",
-            "subtitle": "Symptoms",
-            "text": "Fuck yeah text",
-            "image": {
-              "src": "images/Rolaids-heartburn-3.jpg"
+            "first": {
+              "title": "Rolaids® regular strength tablets <span class=\"color--secondary\">neutralize 44% more</span> acid than Tums® Regular</p> ",
+              "subtitle": "Tablets",
+              "text": "<p>*Acid neutralization does not correlate with symptom relief.</p>"
+            },
+            "last": {
+              "image": {
+                "src": "images/Rolaids-advantage-vstums.png"
+              }
             }
-          }
-        },
-        {
-          "nav": {
-            "link": "#what-prevents-heartburn",
-            "label": "What can I do to help prevent Heartburn?"
           }
         }
       ]
@@ -314,16 +348,16 @@
       },
       "tabs": [
         {
-          "buttonText": "Tab Item 1",
-          "content": "Meggings meh chillwave, chia intelligentsia lomo ethical gentrify blue bottle photo booth beard authentic gluten-free. Hashtag tousled jean shorts blog microdosing, paleo taxidermy kale chips deep v chicharrones plaid roof party listicle. Fingerstache authentic XOXO direct trade literally. Cardigan green juice tacos chia twee. Blog kombucha organic, tote bag listicle celiac marfa raw denim hella next level ennui. Before they sold out single-origin coffee brooklyn, twee 3 wolf moon tousled banjo cred. Biodiesel next level trust fund cray, fashion axe paleo butcher flannel twee gluten-free franzen."
+          "buttonText": "Sizes & Flavors",
+          "content": "<ul><li>150 Count Bottle Mint</li> <li>12 Count Roll</li> <li>3-Roll Pack</li></ul>"
         },
         {
-          "buttonText": "Tab Item 2",
-          "content": "Semiotics literally selfies authentic truffaut, waistcoat biodiesel flexitarian brooklyn keffiyeh vegan kale chips chia kinfolk. Chambray everyday carry vegan whatever, neutra readymade schlitz. Wayfarers 3 wolf moon meh, blog williamsburg chicharrones whatever. Direct trade man braid try-hard, salvia 3 wolf moon cold-pressed migas lomo keffiyeh pour-over messenger bag occupy ennui biodiesel actually. Forage tousled disrupt slow-carb, fap echo park green juice. Mlkshk venmo retro wolf austin ramps. Actually kale chips forage, DIY slow-carb chicharrones ugh skateboard pour-over."
+          "buttonText": "Product Details",
+          "content": "<h3>USES:</h3><ul><li>Heartburn</li><li>Sour stomach</li> <li>Acid indigestion</li></ul> <h3>WARNINGS:</h3> <p>Ask a doctor or pharmacist before use if you are now taking a prescription drug. Antacids may interact with certain prescription drugs. When using this product: do not take more than 12 tablets in a 24-hour period, do not use the maximum dosage for more than 2 weeks. Keep out of reach of children.</p> <h3>DIRECTIONS:</h3> <p>Chew 2-4 tablets as symptoms occur, or as directed by a doctor. </p> <h3>OTHER INFORMATION:</h3> <p>Each tablet contains: <ul><li>calcium 220 mg</li> <li>magnesium 45 mg</li></ul></p>"
         },
         {
-          "buttonText": "Tab Item 3",
-          "content": "Skateboard raw denim authentic cray, etsy you probably haven't heard of them aesthetic austin narwhal gentrify. Tofu vice twee celiac plaid raw denim. Drinking vinegar mixtape beard yuccie green juice YOLO. Freegan neutra asymmetrical mumblecore distillery. Umami raw denim twee man braid. Photo booth skateboard single-origin coffee, pinterest kogi lo-fi literally health goth PBR&B. Kombucha freegan dreamcatcher, biodiesel whatever put a bird on it PBR&B irony pop-up farm-to-table YOLO meh heirloom pabst wayfarers."
+          "buttonText": "Ingredients",
+          "content": "<h3>ACTIVE INGREDIENTS <small>(in each tablet):</small> </h3> <ul><li>Calcium Carbonate 550 mg-antacid</li> <li>Magnesium Hydroxide 110 mg-antacid</li></ul> <h3>INACTIVE INGREDIENTS:</h3> <ul><li>Mint: Dextrose, flavor, magnesium stearate, maltodextrin, silicon dioxide, stearic acid, sucralose, sucrose.</li> <li>Dietary Supplement Facts: When taken as a dietary supplement, each 2-tablet serving contains:</li> <li>Calcium: 440 mg (80% Daily Value based on a 2,000 calorie diet)</li> <li>Magnesium: 90 mg (42% Daily Value based on a 2,000 calorie diet)</li> <li>Calories: 7</li> <li>Total Carb: 1 g</li> <li>Sugars: 1 g</li></ul> "
         }
       ]
     },
@@ -338,29 +372,29 @@
         },
         "product": {
           "large": {
-            "src": "images/Rolaids_ultimate-tablet.png"
+            "src": "images/Rolaids_ultra-tablet.png"
           },
           "small": {
-            "src": "images/Rolaids_ultimate-roll.png"
+            "src": "images/Rolaids_ultra-roll.png"
           }
         }
       },
       "tabs": [
         {
-          "buttonText": "Tab Item 1",
-          "content": "Meggings meh chillwave, chia intelligentsia lomo ethical gentrify blue bottle photo booth beard authentic gluten-free. Hashtag tousled jean shorts blog microdosing, paleo taxidermy kale chips deep v chicharrones plaid roof party listicle. Fingerstache authentic XOXO direct trade literally. Cardigan green juice tacos chia twee. Blog kombucha organic, tote bag listicle celiac marfa raw denim hella next level ennui. Before they sold out single-origin coffee brooklyn, twee 3 wolf moon tousled banjo cred. Biodiesel next level trust fund cray, fashion axe paleo butcher flannel twee gluten-free franzen."
+          "buttonText": "Sizes & Flavors",
+          "content": "<ul><li>72 Count Bottle     Mint</li> <li>10 Count Roll     Assorted Fruit</li> <li>3-Roll Pack</li></ul>"
         },
         {
-          "buttonText": "Tab Item 2",
-          "content": "Semiotics literally selfies authentic truffaut, waistcoat biodiesel flexitarian brooklyn keffiyeh vegan kale chips chia kinfolk. Chambray everyday carry vegan whatever, neutra readymade schlitz. Wayfarers 3 wolf moon meh, blog williamsburg chicharrones whatever. Direct trade man braid try-hard, salvia 3 wolf moon cold-pressed migas lomo keffiyeh pour-over messenger bag occupy ennui biodiesel actually. Forage tousled disrupt slow-carb, fap echo park green juice. Mlkshk venmo retro wolf austin ramps. Actually kale chips forage, DIY slow-carb chicharrones ugh skateboard pour-over."
+          "buttonText": "Product Details",
+          "content": "<h3>USES:</h3> <b>Relieves:</b><ul><li>Heartburn</li> <li>Sour stomach</li> <li>Acid indigestion</li></ul> <h3>WARNINGS:</h3> <p>Ask a doctor or pharmacist before use if you are now taking a prescription drug. Antacids may interact with certain prescription drugs. When using this product: do not take more than 5 chews in a 24-hour period, do not use the maximum dosage for more than 2 weeks. Keep out of reach of children.</p> <h3>DIRECTIONS:</h3> <p>Chew 2-3 chews as symptoms occur, or as directed by a doctor. </p> <h3>OTHER INFORMATION: <small>Each chew contains:</small></h3> <ul><li>calcium 535 mg</li> <li>magnesium 100mg</li></ul> "
         },
         {
-          "buttonText": "Tab Item 3",
-          "content": "Skateboard raw denim authentic cray, etsy you probably haven't heard of them aesthetic austin narwhal gentrify. Tofu vice twee celiac plaid raw denim. Drinking vinegar mixtape beard yuccie green juice YOLO. Freegan neutra asymmetrical mumblecore distillery. Umami raw denim twee man braid. Photo booth skateboard single-origin coffee, pinterest kogi lo-fi literally health goth PBR&B. Kombucha freegan dreamcatcher, biodiesel whatever put a bird on it PBR&B irony pop-up farm-to-table YOLO meh heirloom pabst wayfarers."
+          "buttonText": "Ingredients",
+          "content": "<h3>ACTIVE INGREDIENTS <small>(in each tablet):</small></h3><ul> <li>Calcium Carbonate 1000 mg-antacid</li> <li>Magnesium Hydroxide 200 mg-antacid</li></ul> <h3>INACTIVE INGREDIENTS:</h3> <ul><li>Mint and Assorted Fruit: Dextrose, flavor, magnesium stearate, maltodextrin, silicon dioxide, stearic acid, sucralose, sucrose.</li> <li>Dietary Supplement Facts: When taken as a dietary supplement, each 2-tablet serving contains:</li> <li>Calcium: 800 mg (80% Daily Value based on a 2,000 calorie diet)</li> <li>Magnesium: 170 mg (42% Daily Value based on a 2,000 calorie diet)</li> <li>Calories: 12</li> <li>Total Carb: 2 g</li> <li>Sugars: 2 g</li></ul>"
         }
       ]
     },
-    "ultimateTablets": {
+    "extraStrengthTablets": {
       "hero": {
         "backgroundImage": {
           "src": "//placehold.it/1200x800"
@@ -380,15 +414,15 @@
       },
       "tabs": [
         {
-          "buttonText": "Tab Item 1",
-          "content": "Meggings meh chillwave, chia intelligentsia lomo ethical gentrify blue bottle photo booth beard authentic gluten-free. Hashtag tousled jean shorts blog microdosing, paleo taxidermy kale chips deep v chicharrones plaid roof party listicle. Fingerstache authentic XOXO direct trade literally. Cardigan green juice tacos chia twee. Blog kombucha organic, tote bag listicle celiac marfa raw denim hella next level ennui. Before they sold out single-origin coffee brooklyn, twee 3 wolf moon tousled banjo cred. Biodiesel next level trust fund cray, fashion axe paleo butcher flannel twee gluten-free franzen."
+          "buttonText": "Sizes & Flavors",
+          "content": "<ul><li>96 Count Bottle     Mint</li> <li>10 Count Roll     Assorted Fruit</li> <li>3-Roll Pack</li></ul>"
         },
         {
-          "buttonText": "Tab Item 2",
-          "content": "Semiotics literally selfies authentic truffaut, waistcoat biodiesel flexitarian brooklyn keffiyeh vegan kale chips chia kinfolk. Chambray everyday carry vegan whatever, neutra readymade schlitz. Wayfarers 3 wolf moon meh, blog williamsburg chicharrones whatever. Direct trade man braid try-hard, salvia 3 wolf moon cold-pressed migas lomo keffiyeh pour-over messenger bag occupy ennui biodiesel actually. Forage tousled disrupt slow-carb, fap echo park green juice. Mlkshk venmo retro wolf austin ramps. Actually kale chips forage, DIY slow-carb chicharrones ugh skateboard pour-over."
+          "buttonText": "Product Details",
+          "content": "<h3>USES:</h3><b>Relieves:</b><ul><li>Heartburn</li> <li>Sour stomach</li> <li>Acid indigestion</li></ul> <h3>WARNINGS:</h3> <p>Ask a doctor or pharmacist before use if you are now taking a prescription drug. Antacids may interact with certain prescription drugs. When using this product: do not take more than 10 tablets in a 24-hour period, do not use the maximum dosage for more than 2 weeks. Keep out of reach of children.</p> <h3>DIRECTIONS:</h3> <p>Chew 2-4 tablets as symptoms occur, or as directed by a doctor.</p> <h3>OTHER INFORMATION:</h3> Each tablet contains: <ul><li>calcium 270 mg</li> <li>magnesium 55 mg</li></ul>"
         },
         {
-          "buttonText": "Tab Item 3",
+          "buttonText": "Ingredients",
           "content": "Skateboard raw denim authentic cray, etsy you probably haven't heard of them aesthetic austin narwhal gentrify. Tofu vice twee celiac plaid raw denim. Drinking vinegar mixtape beard yuccie green juice YOLO. Freegan neutra asymmetrical mumblecore distillery. Umami raw denim twee man braid. Photo booth skateboard single-origin coffee, pinterest kogi lo-fi literally health goth PBR&B. Kombucha freegan dreamcatcher, biodiesel whatever put a bird on it PBR&B irony pop-up farm-to-table YOLO meh heirloom pabst wayfarers."
         }
       ]
@@ -408,15 +442,20 @@
           "id": "what-is-heartburn",
           "class": "section-triangle",
           "nav": {
+            "num": "01",
             "link": "#what-is-heartburn",
             "label": "What is Heartburn?"
           },
           "content": {
-            "title": "What is Heartburn?",
-            "subtitle": "Overview",
-            "text": "Nothing can ruin a good time faster than heartburn.",
-            "image": {
-              "src": "images/Rolaids-heartburn-1.jpg"
+            "first": {
+              "title": "What is Heartburn?",
+              "subtitle": "Overview",
+              "text": "<p>Nothing can ruin a good time faster than heartburn. One minute you're enjoying good food and good times with family and friends, and the next you're feeling that familiar, burning sensation rising in your chest.</p><p>Heartburn, and its related conditions, acid reflux and GERD (Gastroesophageal Reflux Disease), occur when the opening between the stomach and esophagus malfunctions and allows stomach acid to enter the esophagus</p><p>What's the difference between these three conditions? What are the symptoms and triggers of heartburn? Explore below to learn more about heartburn, how Rolaids® provides powerful, rapid relief, and things you can do to minimize heartburn symptoms before they start.</p>"
+            },
+            "last": {
+              "image": {
+                "src": "images/Rolaids-heartburn-1.jpg"
+              }              
             }
           }
         },
@@ -424,37 +463,147 @@
           "id": "what-are-the-symptoms",
           "class": "section-display",
           "nav": {
+            "num": "02",
             "link": "#what-are-the-symptoms",
             "label": "What are the symptoms of Heartburn?"
           },
           "content": {
-            "title": "Heartburn Symptoms",
-            "subtitle": "Symptoms",
-            "text": "The primary symptom of heartburn is a painful, burning sensaiton in the chest",
-            "image": {
-              "src": "images/Rolaids-heartburn-2.png"
+            "first": {
+              "image": {
+                "src": "images/Rolaids-heartburn-2.png"
+              }
+            },
+            "last": {
+              "title": "Heartburn Symptoms",
+              "subtitle": "Symptoms",
+              "text": "<p>Heartburn is perfectly named, because it’s a burning sensation in your esophagus located in your chest. When you swallow food it travels down the esophagus to the stomach where acids break it down. But when stomach acids travel back up into the esophagus, they irritate its sensitive lining. And it hurts!</p><p> Rolaids neutralizes these acids instantly to relieve your discomfort fast. Take Rolaids® and you “kick acid.”</p>"
             }
           }
         },
         {
+          "content": {
+            "first": {
+              "title": "Heartburn vs. Acid Reflux vs. Gerd",
+              "subtitle": "Symptoms",
+              "text": "<p>People sometimes confuse heartburn with acid reflux and GERD (Gastroesophageal Reflux Disease) because the symptoms are similar, however they are more serious conditions. Heartburn is an occasional condition with mild to moderate symptoms, while acid reflux and GERD typically occur at least twice a week, with more severe symptoms.</p><p>If you have heartburn symptoms that persist even after taking Rolaids®, make an appointment to see your healthcare professional.</p><p>Heartburn symptoms can also be similar to symptoms for more serious conditions unrelated to digestion. Be sure to consult your healthcare provider if you experience:</p>"
+            },
+            "last": {
+              "listTitle": "Be sure to consult your healthcare provider if you experience:",
+              "list": [
+                { "num": "01", "text": "Heartburn that returns as soon as your antacid wears off" },
+                { "num": "02", "text": "Heartburn that often wakes you up at night" },
+                { "num": "03", "text": "Difficulty swallowing" },
+                { "num": "04", "text": "Spitting up blood" },
+                { "num": "05", "text": "Black stools" },
+                { "num": "06", "text": "Weight loss" }
+              ]
+            }
+          }
+        },
+        {
+          "class": "section-triangle--secondary section-triangle--reverse",
+          "content": {
+            "first": {
+              "image": {
+                "src": "images/Rolaids-heartburn-3.jpg"
+              }
+            },
+            "last": {
+              "title": "Heartburn & Pregnancy",
+              "subtitle": "Symptoms",
+              "text": "<p>More than half of all pregnant women experience heartburn, often due to changing hormone levels and/or pressure from the growing uterus pushing on the stomach. Symptoms usually disappear after the baby is born.</p><p>The good news is that Rolaids® can help, and contains two ingredients that are beneficial for a healthy pregnancy – calcium and magnesium. Each serving of Rolaids® provides a source of calcium and magnesium to supplement your body's nutritional needs during pregnancy.* Please note: Rolaids is NOT an alternative to prenatal vitamins.</p><p>If you experience heartburn symptoms while pregnant, consult with your healthcare professional and ask if Rolaids® can help.</p><small>*This statement has not been evaluated by the FDA. This product is not intended to diagnose, treat, cure or prevent any disease.</small>"
+            }
+          }
+        },
+        {
+          "id": "triggers",
           "class": "section-default",
           "nav": {
-            "link": "#what-triggers-heartburn",
-            "label": "What triggers Heartburn?"
+            "num": "03",
+            "link": "#triggers",
+            "label": "What Triggers Heartburn?"
           },
           "content": {
-            "title": "More Symptoms",
-            "subtitle": "Symptoms",
-            "text": "Fuck yeah text",
-            "image": {
-              "src": "images/Rolaids-heartburn-3.jpg"
+            "first": {
+              "image": {
+                "src": "images/Rolaids-heartburn-4.jpg"
+              }
+            },
+            "last": {
+              "title": "Heartburn Triggers",
+              "subtitle": "Triggers",
+              "text": "<p>Why do some foods trigger heartburn more than others? When your stomach senses spicy, hard-to-digest foods and beverages, or a lot of food all at once, it produces more acids to digest them. Extra stomach acids back up into the esophagus to cause heartburn. Foods are the main culprit, but there are also other causes.</p>",
+              "list": [
+                { "num": "01", "text": "Fried or fatty foods" },
+                { "num": "02", "text": "Onions, garlic and other spicy foods" },
+                { "num": "03", "text": "Acidic foods like citrus fruits and tomato products" },
+                { "num": "04", "text": "Chocolate" }
+              ]
             }
           }
         },
         {
+          "content": {
+            "first": {
+              "list": [
+                { "num": "05", "text": "Mints" },
+                { "num": "06", "text": "Eating too much or too quickly" },
+                { "num": "07", "text": "Lying down after eating" },
+                { "num": "08", "text": "Coffee and other caffeinated beverages" },
+                { "num": "09", "text": "Carbonated drinks" },
+                { "num": "10", "text": "Certain medications, including aspirin or ibuprofen" },
+                { "num": "11", "text": "Alcohol" },
+                { "num": "12", "text": "Cigarette smoking" }
+              ]
+            },
+            "last": {
+              "image": {
+                "src": "images/Rolaids-heartburn-5.jpg"
+              }
+            }
+          }
+        },
+        {
+          "id": "what-prevents-heartburn",
           "nav": {
+            "num": "04",
             "link": "#what-prevents-heartburn",
             "label": "What can I do to help prevent Heartburn?"
+          },
+          "content": {
+            "first": {
+              "image": {
+                "src": "images/Rolaids-heartburn-6.jpg"
+              }
+            },
+            "last": {
+              "title": "Lifestyle Tips",
+              "subtitle": "Lifestyle",
+              "text": "<p>To avoid heartburn you’ll need to avoid the foods, beverages, and activities that tend to affect you the worst. So the first tip is to make a list of the foods and other things that trigger your heartburn. The second tip is to always carry Rolaids®.</p>",
+              "list": [
+                { "num": "01", "text": "Wear loose-fitting clothes. Tight clothes put pressure on the stomach to push acid back up into the esophagus." },
+                { "num": "02", "text": "Eat smaller, more frequent meals, so your stomach doesn't get too full. An overstuffed stomach produces more acid." },
+                { "num": "03", "text": "Don’t lie down after eating. When you get horizontal, stomach acids can damage the opening between the esophagus and stomach allowing acid to flow back into the esophagus." }
+              ]
+            }
+          }
+        },
+        {
+          "content": {
+            "first": {
+              "list": [
+                { "num": "04", "text": "If you're on a prescription medication that is causing heartburn, speak to your healthcare professional about other options." },
+                { "num": "05", "text": "Raise the head of your bed by putting blocks under the bedposts. Extra pillows alone may not help." },
+                { "num": "06", "text": "Limit the foods and beverages that worsen symptoms." },
+                { "num": "07", "text": "Stop smoking and/or drinking alcohol." },
+                { "num": "08", "text": "Excess weight can sometimes make symptoms worse. If you are overweight, try to lose weight but first check with your healthcare professional to determine a safe weight loss plan. " }
+              ]
+            },
+            "last": {
+              "image": {
+                "src": "images/Rolaids-heartburn-7.jpg"
+              }
+            }
           }
         }
       ]
@@ -466,59 +615,104 @@
         },
         "caption": {
           "title": "Gas",
-          "text": "Farting is gross"
+          "text": ""
         }
       },
       "sections": [
         {
+          "id": "what-is-gas",
           "class": "section-triangle",
           "nav": {
-            "link": "#what-is-farting",
-            "label": "What is Farting?"
+            "num": "01",
+            "link": "#what-is-gas",
+            "label": "What is Gas?"
           },
           "content": {
-            "title": "What is Fartburn?",
-            "subtitle": "Overview",
-            "text": "Nothing can ruin a good time faster than heartburn.",
-            "image": {
-              "src": "images/Rolaids-gas-1.jpg"
+            "first": {
+              "title": "What is Gas?",
+              "subtitle": "Overview",
+              "text": "<p>Whenever your body breaks down food, gas is produced. It happens in your stomach where gas tries to escape through burping. But gas continues being produced once food reaches the intestines where it causes flatulence. </p><p>No matter where it’s occurring, gas can cause sharp pains or cramps. All the sudden your clothes feel like they’ve gotten tighter. But your clothes haven’t gotten smaller – your belly has gotten bigger. </p>"
+            },
+            "last": {
+              "image": {
+                "src": "images/Rolaids-gas-1.jpg"
+              }
             }
           }
         },
         {
+          "id": "what-are-the-symptoms",
           "class": "section-display",
           "nav": {
+            "num": "02",
             "link": "#what-are-the-symptoms",
-            "label": "What are the symptoms of Fartburn?"
+            "label": "What are the Symptoms of Gas?"
           },
           "content": {
-            "title": "Fartburn Symptoms",
-            "subtitle": "Symptoms",
-            "text": "The primary symptom of heartburn is a painful, burning sensaiton in the chest",
-            "image": {
-              "src": "images/Rolaids-gas-2.jpg"
+            "first": {
+              "image": {
+                "src": "images/Rolaids-gas-2.jpg"
+              }
+            },
+            "last": {
+              "title": "What are the Symptoms of Gas?",
+              "subtitle": "Symptoms",
+              "text": "<p>Since gas can form anywhere from your stomach to your colon, you can experience symptoms of many types. No matter where it occurs in the digestive process, gas causes your stomach and/or abdomen to expand. This uncomfortable condition is called bloating, and it can last for hours or a few minutes. </p><p>As your stomach gets bloated by gas, you will feel the urge to belch and burp. When gas is formed in the intestines, you will experience flatulence. And when the gas gets trapped with no place to go, it can cause pain and cramping in your abdomen that can move slowly from one place to another. These gas pains can range from mild to intense. Even though the discomfort tends to make you want to sit still or lie down, it helps to engage in some activity such as walking to help move your food through your system. </p>"
             }
           }
         },
         {
-          "class": "section-default",
-          "nav": {
-            "link": "#what-triggers-fartburn",
-            "label": "What triggers Fartburn?"
-          },
+          "class": "bg--secondary",
           "content": {
-            "title": "More Symptoms",
-            "subtitle": "Symptoms",
-            "text": "Fuck yeah farts",
-            "image": {
-              "src": "images/Rolaids-gas-3.jpg"
+            "first": {
+              "text": "<p>Rolaids® Advanced has what it takes to help you win your war on gas. If you’re going out in public, make sure to bring some along just in case.</p><p>Occasional gas is normal and to be expected. But you should see a physician if you tend to have more serious problems such as severe abdominal pain, chest pain, diarrhea, changes in stool color, or unintended weight loss. These symptoms could be signs of a digestive illness such as irritable bowel syndrome, gluten or lactose intolerance, or Crohn’s disease. </p>"
+            },
+            "last": {
+              "image": {
+                "src": "images/Rolaids-gas-3.jpg"
+              }
             }
           }
         },
         {
+          "id": "what-triggers-gas",
           "nav": {
-            "link": "#what-prevents-fartburn",
-            "label": "What can I do to help prevent Fartburn?"
+            "num": "03",
+            "link": "#what-triggers-gas",
+            "label": "What Triggers Gas?"
+          },
+          "content": {
+            "first": {
+              "title": "What Triggers Gas?",
+              "subtitle": "Triggers",
+              "text": "<p>As food digests and ferments in your digestive tract, it gives off gas. As food begins digesting in the stomach, the gas produced tends to cause burping. As food continues being digested in the intestines, the gas produces flatulence. Either type is not pleasant for you or the people around you. </p><p>Certain foods are harder to digest than others, so they create more gas. And beverages can be a cause as well, especially the bubbly kind. Fortunately, Rolaids® brings welcome relief fast. </p>"
+            },
+            "last": {
+              "listTitle": "Be Aware of Problem Foods and Habits",
+              "list": [
+                { "num": "01", "text": "Eat small amounts of cruciferous vegetables such as beans, lentils, broccoli, cabbage, cauliflower, etc." },
+                { "num": "02", "text": "Consume smaller amounts of high-fiber, whole grain breads. " },
+                { "num": "03", "text": "Reduce your intake of dairy products containing lactose." },
+                { "num": "04", "text": "Watch out for fructose and sorbitol, which are found in some fruits and are also used as sweeteners. " },
+                { "num": "05", "text": "Avoid fried, fatty foods." }
+              ]
+            }
+          }
+        },
+        {
+          "content": {
+            "first": {
+              "list": [
+                { "num": "06", "text": "Avoid bubbly, carbonated drinks and sodas. Straws can make you swallow more air and make gas worse. " },
+                { "num": "07", "text": "Go easy on fiber supplements." },
+                { "num": "08", "text": "Don’t smoke. It can make you swallow more air." },
+                { "num": "09", "text": "Exercise and activity helps move food steadily through your system. The longer your food sits in your system the more it ferments to create gas. " },
+                { "num": "10", "text": "Eat slowly so as not to overburden your digestive system with a tsunami of food." },
+                { "num": "11", "text": "Chew your food thoroughly before swallowing. This makes your food easier for your system to digest. " },
+                { "num": "12", "text": "Don’t talk while eating as it makes you swallow more air." },
+                { "num": "13", "text": "Poorly fitting dentures can make you swallow more air." }
+              ]
+            }
           }
         }
       ]
@@ -530,59 +724,71 @@
         },
         "caption": {
           "title": "Acid Indigestion",
-          "text": "Diarrhea is gross"
+          "text": ""
         }
       },
       "sections": [
         {
+          "id": "what-is-indigestion",
           "class": "section-triangle",
           "nav": {
-            "link": "#what-is-diarrhea",
-            "label": "What is Dairrhea?"
+            "num": "01",
+            "link": "#what-is-indigestion",
+            "label": "What is Indigestion?"
           },
           "content": {
-            "title": "What is Diarrhea?",
-            "subtitle": "Overview",
-            "text": "Nothing can ruin a good time faster than diarrhea.",
-            "image": {
-              "src": "images/Rolaids-indigestion-1.jpg"
+            "first": {
+              "title": "What is Acid Indigestion?",
+              "subtitle": "Overview",
+              "text": "<p>Like heartburn, acid indigestion can cause burning and pain in the upper abdomen. And like heartburn, when it occurs on a regular basis, it can interfere with your enjoyment of life. ROLAIDS® provides rapid relief for acid indigestion, so you can get back to eating the foods you love and enjoying the good times without feeling the discomfort or the burn.</p>"
+            },
+            "last": {
+              "image": {
+                "src": "images/Rolaids-indigestion-1.jpg"
+              }
             }
           }
         },
         {
+          "id": "what-are-the-symptoms",
           "class": "section-display",
           "nav": {
+            "num": "02",
             "link": "#what-are-the-symptoms",
-            "label": "What are the symptoms of Diarrhea?"
+            "label": "What are the Symptoms"
           },
           "content": {
-            "title": "Diarrhea Symptoms",
-            "subtitle": "Symptoms",
-            "text": "The primary symptom of diarrhea is a painful, burning sensaiton in the chest",
-            "image": {
-              "src": "images/Rolaids-indigestion-2.png"
+            "first": {
+              "image": {
+                "src": "images/Rolaids-indigestion-2.png"
+              }
+            },
+            "last": {
+              "title": "What are the symptoms of Acid Indigestion",
+              "subtitle": "Symptoms",
+              "text": "<p>Indigestion is not the same as heartburn, even though excess stomach acid causes both. Indigestion is the discomfort in your stomach, while heartburn is a bit higher in your esophagus.</p><p>Indigestion after a meal is a painful situation, and can include bloating, nausea, queasiness, and a feeling of fullness. What do you do? What else? Kick acid, with Rolaids®!</p>"
             }
           }
         },
         {
-          "class": "section-default",
-          "nav": {
-            "link": "#what-triggers-diarrhea",
-            "label": "What triggers Diarrhea?"
-          },
           "content": {
-            "title": "More Symptoms",
-            "subtitle": "Symptoms",
-            "text": "Fuck yeah poop",
-            "image": {
-              "src": "images/Rolaids-indigestion-3.jpg"
+            "first": {
+              "title": "Understanding Acid Indigestion",
+              "subtitle": "Symptoms",
+              "text": "<p>Indigestion and heartburn are both caused by problems with stomach acid, and they both hurt. Fortunately, they’re both relieved fast by Rolaids®.</p><p>The two active ingredients in Rolaids®, calcium carbonate and magnesium hydroxide, deliver effective, rapid relief for both of these conditions. One minute your stomach feels bloated and queasy, then Rolaids®  goes to work and your painful symptoms start to ease. You’ll be glad it works so fast.</p>"
+            },
+            "last": {
+              "listTitle": "Sometimes acid indigestion can be the sign of a more serious condition. Speak to your healthcare professional if you experience:",
+              "list": [
+                { "num": "01", "text": "Frequent vomiting" },
+                { "num": "02", "text": "Blood in vomit" },
+                { "num": "03", "text": "Weight loss or loss of appetite" },
+                { "num": "04", "text": "Black stools" },
+                { "num": "05", "text": "Difficult or painful swallowing" },
+                { "num": "06", "text": "Shortness of breath, sweating or pain that radiates from the jaw, neck or arm" },
+                { "num": "07", "text": "Symptoms that persist for more than two weeks" }
+              ]
             }
-          }
-        },
-        {
-          "nav": {
-            "link": "#what-prevents-diarrhea",
-            "label": "What can I do to help prevent Diarrhea?"
           }
         }
       ]
@@ -591,17 +797,20 @@
       "hero": {
         "backgroundImage": {
           "src": "//placehold.it/1200x800"
+        },
+        "caption": {
+          "title": "Coupon & Offers"
         }
       },
       "content": {
-        "title": "Save $1.00 on Rolaids&reg;",
+        "title": "Save <span class=\"color--primary\">$1.00</span> on Rolaids<sup>&reg;</sup>",
         "text": "",
         "button": {
           "text": "Download Coupon",
           "buttonLink": "#"
         },
         "image": {
-          "src": "//placehold.it/500x500/ffffff",
+          "src": "images/Rolaids-coupon-products.png",
           "alt": "Image Alt"
         }
       }

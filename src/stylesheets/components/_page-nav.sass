@@ -1,8 +1,8 @@
 .page-nav
   background: $white
-  margin: 0
-  counter-reset: nav-counter
+  margin: 0 auto
 
+  max-width: 1440px
   width: 100%
   text-transform: uppercase
 
@@ -19,27 +19,31 @@
     padding: 1em
     +position(relative)
 
-    &:before
-      content: counter(nav-counter)
-      counter-increment: nav-counter
+    .page-nav__num
+      color: #000
 
       font-size: 22px
       font-weight: bold
+      text-align: left
+      
+      +display(flex)
+      +align-items(center)
 
-      display: table
-      margin: 1em auto
+      margin: 0 0.25em
       padding: 0 0.5em
+      +position(relative)
 
-    &:after
-      content: ''
-      background: $color-secondary
-      border-radius: 30px
+      &:after
+        content: ''
+        background: $color-secondary
+        border-radius: 30px
 
-      display: block
-      margin: auto
-      +position(absolute, 4.25em 0 null)
-      height: 5px
-      width: 2rem
+        display: block
+        margin: auto
+        +position(absolute, auto 0)
+        height: 5px
+        width: 2rem
+
 
     &:hover
       background: $light-grey
@@ -47,8 +51,9 @@
 
     +media(min-width $screen-medium)
       text-align: left
-      max-width: 250px
+      // max-width: 300px
       +display(flex)
+      +justify-content(center)
       +align-items(center)
 
       &:before
@@ -73,3 +78,9 @@
     padding: 0.5rem 0
     +media(min-width $screen-small)
       padding: 1.5rem 1rem
+
+
+
+.rolaids-advantage .page-nav
+  .page-nav__link, .page-nav__num
+    font-size: 200%

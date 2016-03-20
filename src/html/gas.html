@@ -23,46 +23,81 @@
 {% block content %}
   <dl class="page-nav">
     {% for item in page.gas.sections %}
-    <dt><a class="page-nav__link" href="{{ item.nav.link }}">{{ item.nav.label }}</a></dt>
+      {% if item.nav %}
+        <dt>
+          <a class="page-nav__num" href="{{ item.nav.link }}">{{ item.nav.num }}</a>
+          <a class="page-nav__link" href="{{ item.nav.link }}">{{ item.nav.label }}</a>
+        </dt>
+      {% endif %}
     {% endfor %}
   </dl>
 
   <main class="content">
-  {# For some reason, sections.index won't work. So we manually set a count #}
-  {% set count = 0 %}
   {% for section in page.gas.sections %}
-    {% set count = count + 1 %}
-    <section id="{{ section.id }}"class="section {{ section.class }}">
+   
+    <section id="{{ section.id }}" class="section {{ section.class }}">
       <div class="section-content">
-        {% if (count % 2) %}
-        <div class="section-content__column">
-          <header class="section-header">
-            <h4 class="section-header__subtitle">{{ section.content.subtitle }}</h4>
-            <h1 class="section-header__title">{{ section.content.title }}</h1>
-          </header>
-          <div class="section-content__text">
-            {{ section.content.text }}
+
+        {% if section.content.first %}
+          <div class="section-content__column">
+            {% if section.content.first.title and section.content.first.subtitle %}
+              <header class="section-header">
+                <h4 class="section-header__subtitle">{{ section.content.first.subtitle }}</h4>
+                <h1 class="section-header__title">{{ section.content.first.title }}</h1>
+              </header>
+            {% endif %}
+            {% if section.content.first.text %}
+              <div class="section-content__text">
+                {{ section.content.first.text }}
+              </div>
+            {% endif %}
+            {% if section.content.first.image %}
+              <div class="section-image" style="background-image: url({{ section.content.first.image.src }})"></div>
+            {% endif %}
+            {% if section.content.first.list %}
+              <p class="list-title">{{ section.content.first.listTitle }}</p>
+              <dl class="list">
+                {% for item in section.content.first.list %}
+                  <dt><div class="list-number">{{ item.num }}</div>{{ item.text }}</dt>
+                {% endfor %}
+              </dl>
+            {% endif %}
           </div>
-        </div>
-        <div class="section-content__column">
-          <img class="section-image" src="{{ section.content.image.src }}" alt="{{ section.content.image.alt }}">
-        </div>
-        {% else %}
-        <div class="section-content__column">
-          <img class="section-image" src="{{ section.content.image.src }}" alt="{{ section.content.image.alt }}">
-        </div>
-        <div class="section-content__column">
-          <header class="section-header">
-            <h4 class="section-header__subtitle">{{ section.content.subtitle }}</h4>
-            <h1 class="section-header__title">{{ section.content.title }}</h1>
-          </header>
-          <div class="section-content__text">
-            {{ section.content.text }}
-          </div>
-        </div>
         {% endif %}
+
+        {% if section.content.last %}
+           <div class="section-content__column">
+            {% if section.content.last.title and section.content.last.subtitle %}
+              <header class="section-header">
+                <h4 class="section-header__subtitle">{{ section.content.last.subtitle }}</h4>
+                <h1 class="section-header__title">{{ section.content.last.title }}</h1>
+              </header>
+            {% endif %}
+            {% if section.content.last.text %}
+              <div class="section-content__text">
+                {{ section.content.last.text }}
+              </div>
+            {% endif %}
+            {% if section.content.last.image %}
+              <!-- <img class="section-image" src="{{ section.content.last.image.src }}" alt="{{ section.content.last.image.alt }}"> -->
+              <div class="section-image" style="background-image: url({{ section.content.last.image.src }})"></div>
+            {% endif %}
+            {% if section.content.last.list %}
+              {% if section.content.last.listTitle %}
+                <p class="list-title">{{ section.content.last.listTitle }}</p>
+              {% endif %}
+              <dl class="list">
+                {% for item in section.content.last.list %}
+                  <dt><div class="list-number">{{ item.num }}</div>{{ item.text }}</dt>
+                {% endfor %}
+              </dl>
+            {% endif %}
+          </div>
+        {% endif %}
+        
       </div>
     </section>
+
   {% endfor %}
   </main>
 
