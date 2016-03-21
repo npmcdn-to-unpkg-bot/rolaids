@@ -21,7 +21,7 @@
   "images/Rolaids-advantage-tablets-advanced.png": "images/Rolaids-advantage-tablets-advanced-df92cd7481.png",
   "images/Rolaids-advantage-tablets-life.png": "images/Rolaids-advantage-tablets-life-ed3c1fc464.png",
   "images/Rolaids-advantage-vstums.png": "images/Rolaids-advantage-vstums-9e49ac12b2.png",
-  "images/Rolaids-coupon-products.png": "images/Rolaids-coupon-products-dad81febc4.png",
+  "images/Rolaids-coupon-products.png": "images/Rolaids-coupon-products-137701103f.png",
   "images/Rolaids-gas-1.jpg": "images/Rolaids-gas-1-2ad1b22175.jpg",
   "images/Rolaids-gas-2.jpg": "images/Rolaids-gas-2-564b8ca803.jpg",
   "images/Rolaids-gas-3.jpg": "images/Rolaids-gas-3-9edf876d88.jpg",
@@ -47,7 +47,7 @@
   "images/Rolaids-products-drop-reg.png": "images/Rolaids-products-drop-reg-1f2297e6bb.png",
   "images/Rolaids-products-drop-ult.png": "images/Rolaids-products-drop-ult-39785f028e.png",
   "images/Rolaids-products-drop-xtra.png": "images/Rolaids-products-drop-xtra-3b0074bbb3.png",
-  "images/Rolaids-symptoms-gas.png": "images/Rolaids-symptoms-gas-714d2851b2.png",
+  "images/Rolaids-symptoms-gas.png": "images/Rolaids-symptoms-gas-eb457e7ad2.png",
   "images/Rolaids-symptoms-heartburn.png": "images/Rolaids-symptoms-heartburn-72d5f6875e.png",
   "images/Rolaids-symptoms-indigestion.png": "images/Rolaids-symptoms-indigestion-f6bbe1f91e.png",
   "images/Rolaids_advanced-roll.png": "images/Rolaids_advanced-roll-0568301ef6.png",
@@ -63,10 +63,11 @@
   "images/Rolaids_ultra-tablet.png": "images/Rolaids_ultra-tablet-9d2e7cce4a.png",
   "images/Sanofi-logo-135x30.png": "images/Sanofi-logo-135x30-1a356b7512.png",
   "images/logo_chattem.png": "images/logo_chattem-63c0025c4b.png",
-  "images/rolaids-home-1.png": "images/rolaids-home-1-c0d14992ea.png",
+  "images/rolaids-home-1.png": "images/rolaids-home-1-113da66343.png",
+  "images/rolaids-home-2.png": "images/rolaids-home-2-7da875cf00.png",
   "images/sanofi-logo.png": "images/sanofi-logo-0e5146d925.png",
   "images/sprites.svg": "images/sprites-0325b3f89a.svg",
-  "javascripts/app.js": "javascripts/app-7c6f7230e65a2d0fde5b.js",
-  "javascripts/shared.js": "javascripts/shared-7c6f7230e65a2d0fde5b.js",
-  "stylesheets/global.css": "stylesheets/global-ef6b227f9e.css"
+  "javascripts/app.js": "javascripts/app-64cea7b87f38cd32ddfd.js",
+  "javascripts/shared.js": "javascripts/shared-64cea7b87f38cd32ddfd.js",
+  "stylesheets/global.css": "stylesheets/global-e2d6389ad8.css"
 }
